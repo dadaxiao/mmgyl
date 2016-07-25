@@ -1,0 +1,846 @@
+[ 2016-07-25T16:34:16+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proSearch?searchtext=%E5%93%86%E5%95%A6A%E6%A2%A6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.029026s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002981s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003264s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0712s ]
+SQL: SELECT * FROM `pro` WHERE `pName` LIKE '%哆啦A梦%' OR `pSn` LIKE '%哆啦A梦%'  [ RunTime:0.0019s ]
+
+[ 2016-07-25T16:44:30+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proAdd?pName=%E9%A6%99%E8%95%89&price=2.2&pIntro=%E6%94%BE%E6%8A%BD%E7%AD%8B%E5%BF%85%E5%A4%87&userName=%E9%A6%99%E8%95%89%E5%A4%A7%E7%8E%8B&pnum=102
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001541s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001886s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002038s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0064s ]
+NOTIC: [8] Undefined index: pImg D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 208 行.
+NOTIC: [8] Undefined index: pNum D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 210 行.
+NOTIC: [8] Undefined variable: data D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 212 行.
+
+[ 2016-07-25T16:45:54+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proAdd?pName=%E9%A6%99%E8%95%89&price=2.2&pIntro=%E6%94%BE%E6%8A%BD%E7%AD%8B%E5%BF%85%E5%A4%87&userName=%E9%A6%99%E8%95%89%E5%A4%A7%E7%8E%8B&pnum=102
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002410s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008103s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008280s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0042s ]
+NOTIC: [8] Undefined index: pImg D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 208 行.
+NOTIC: [8] Undefined index: pNum D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 210 行.
+
+[ 2016-07-25T16:46:13+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proAdd?pName=%E9%A6%99%E8%95%89&price=2.2&pIntro=%E6%94%BE%E6%8A%BD%E7%AD%8B%E5%BF%85%E5%A4%87&userName=%E9%A6%99%E8%95%89%E5%A4%A7%E7%8E%8B&pnum=102&pImg=localhost
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002225s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006698s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0041s ]
+NOTIC: [8] Undefined index: pNum D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 210 行.
+
+[ 2016-07-25T16:46:52+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proAdd?pName=%E9%A6%99%E8%95%89&price=2.2&pIntro=%E6%94%BE%E6%8A%BD%E7%AD%8B%E5%BF%85%E5%A4%87&userName=%E9%A6%99%E8%95%89%E5%A4%A7%E7%8E%8B&pnum=102&pImg=localhost
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001720s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003831s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004037s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0046s ]
+NOTIC: [8] Undefined index: pNum D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 210 行.
+
+[ 2016-07-25T16:46:56+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proAdd?pName=%E9%A6%99%E8%95%89&price=2.2&pIntro=%E6%94%BE%E6%8A%BD%E7%AD%8B%E5%BF%85%E5%A4%87&userName=%E9%A6%99%E8%95%89%E5%A4%A7%E7%8E%8B&pnum=102&pImg=localhost
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001832s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003959s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004233s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0227s ]
+NOTIC: [8] Undefined index: pNum D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 210 行.
+
+[ 2016-07-25T16:47:16+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proAdd?pName=%E9%A6%99%E8%95%89&price=2.2&pIntro=%E6%94%BE%E6%8A%BD%E7%AD%8B%E5%BF%85%E5%A4%87&userName=%E9%A6%99%E8%95%89%E5%A4%A7%E7%8E%8B&pnum=102
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001952s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005205s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005422s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0024s ]
+NOTIC: [8] Undefined index: pImg D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 208 行.
+NOTIC: [8] Undefined index: pNum D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 210 行.
+
+[ 2016-07-25T16:47:21+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proAdd?pName=%E9%A6%99%E8%95%89&price=2.2&pIntro=%E6%94%BE%E6%8A%BD%E7%AD%8B%E5%BF%85%E5%A4%87&userName=%E9%A6%99%E8%95%89%E5%A4%A7%E7%8E%8B&pnum=102&pImg=localhost
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002453s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002643s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0018s ]
+NOTIC: [8] Undefined index: pNum D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 210 行.
+
+[ 2016-07-25T16:49:26+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proAdd?pName=%E9%A6%99%E8%95%89&price=2.2&pIntro=%E6%94%BE%E6%8A%BD%E7%AD%8B%E5%BF%85%E5%A4%87&userName=%E9%A6%99%E8%95%89%E5%A4%A7%E7%8E%8B&pnum=102&pImg=localhost
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002503s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002664s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0047s ]
+NOTIC: [8] Undefined index: pNum D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 210 行.
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'pNum' cannot be null
+
+[ 2016-07-25T16:49:54+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proAdd?pName=%E9%A6%99%E8%95%89&price=2.2&pIntro=%E6%94%BE%E6%8A%BD%E7%AD%8B%E5%BF%85%E5%A4%87&userName=%E9%A6%99%E8%95%89%E5%A4%A7%E7%8E%8B&pnum=102&pImg=localhost
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001927s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004451s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004660s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0045s ]
+NOTIC: [8] Undefined index: pNum D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 210 行.
+
+[ 2016-07-25T16:50:42+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proAdd?pName=%E9%A6%99%E8%95%89&price=2.2&pIntro=%E6%94%BE%E6%8A%BD%E7%AD%8B%E5%BF%85%E5%A4%87&userName=%E9%A6%99%E8%95%89%E5%A4%A7%E7%8E%8B&pnum=102&pImg=localhost
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003540s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006537s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0044s ]
+NOTIC: [8] Undefined index: pNum D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 210 行.
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'pNum' cannot be null
+
+[ 2016-07-25T16:51:50+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proAdd?pName=%E9%A6%99%E8%95%89&price=2.2&pIntro=%E6%94%BE%E6%8A%BD%E7%AD%8B%E5%BF%85%E5%A4%87&userName=%E9%A6%99%E8%95%89%E5%A4%A7%E7%8E%8B&pnum=102&pImg=localhost
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002138s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005515s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0035s ]
+SQL: INSERT INTO `pro` (`pName`,`price`,`pIntro`,`pImg`,`userName`) VALUES ('香蕉','2.2','放抽筋必备','localhost','香蕉大王') [ RunTime:0.2515s ]
+
+[ 2016-07-25T16:53:12+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proAdd?pName=%E9%A6%99%E8%95%89&price=2.2&pIntro=%E6%94%BE%E6%8A%BD%E7%AD%8B%E5%BF%85%E5%A4%87&userName=%E9%A6%99%E8%95%89%E5%A4%A7%E7%8E%8B&pnum=102&pImg=localhost
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001920s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003921s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004354s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0022s ]
+NOTIC: [8] Undefined index: pNum D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 210 行.
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'pNum' cannot be null
+
+[ 2016-07-25T16:54:26+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proAdd?pName=%E9%A6%99%E8%95%89&price=2.2&pIntro=%E6%94%BE%E6%8A%BD%E7%AD%8B%E5%BF%85%E5%A4%87&userName=%E9%A6%99%E8%95%89%E5%A4%A7%E7%8E%8B&pnum=102&pImg=localhost
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008642s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.013739s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013954s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0028s ]
+NOTIC: [8] Undefined index: pNum D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 210 行.
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'pNum' cannot be null
+
+[ 2016-07-25T16:54:37+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proAdd?pName=%E9%A6%99%E8%95%89&price=2.2&pIntro=%E6%94%BE%E6%8A%BD%E7%AD%8B%E5%BF%85%E5%A4%87&userName=%E9%A6%99%E8%95%89%E5%A4%A7%E7%8E%8B&pNum=102&pImg=localhost
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002029s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003633s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003894s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0019s ]
+SQL: INSERT INTO `pro` (`pName`,`price`,`pIntro`,`pImg`,`userName`,`pNum`) VALUES ('香蕉','2.2','放抽筋必备','localhost','香蕉大王','102') [ RunTime:0.0548s ]
+
+[ 2016-07-25T16:55:09+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proAdd?pName=%E9%A6%99%E8%95%89&price=2.2&pIntro=%E6%8A%BD%E7%AD%8B%E5%BF%85%E5%A4%87&userName=%E9%A6%99%E8%95%89%E5%A4%A7%E7%8E%8B&pNum=102&pImg=localhost
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001732s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004186s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004395s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0019s ]
+SQL: INSERT INTO `pro` (`pName`,`price`,`pIntro`,`pImg`,`userName`,`pNum`) VALUES ('香蕉','2.2','抽筋必备','localhost','香蕉大王','102') [ RunTime:0.1236s ]
+
+[ 2016-07-25T16:55:21+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proAdd?pName=%E9%A6%99%E8%95%89&price=fa&pIntro=%E6%8A%BD%E7%AD%8B%E5%BF%85%E5%A4%87&userName=%E9%A6%99%E8%95%89%E5%A4%A7%E7%8E%8B&pNum=102&pImg=localhost
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002401s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003676s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004095s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0025s ]
+SQL: INSERT INTO `pro` (`pName`,`price`,`pIntro`,`pImg`,`userName`,`pNum`) VALUES ('香蕉','fa','抽筋必备','localhost','香蕉大王','102') [ RunTime:0.0286s ]
+
+[ 2016-07-25T16:56:37+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proAdd?pName=%E9%A6%99%E8%95%89&price=fas&pIntro=%E6%8A%BD%E7%AD%8B%E5%BF%85%E5%A4%87&userName=%E9%A6%99%E8%95%89%E5%A4%A7%E7%8E%8B&pNum=102&pImg=localhost
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001439s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002555s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0054s ]
+SQL: INSERT INTO `pro` (`pName`,`price`,`pIntro`,`pImg`,`userName`,`pNum`) VALUES ('香蕉','fas','抽筋必备','localhost','香蕉大王','102') [ RunTime:0.2002s ]
+
+[ 2016-07-25T16:57:18+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proAdd?pName=%E9%A6%99%E8%95%89&price=20&pIntro=%E6%8A%BD%E7%AD%8B%E5%BF%85%E5%A4%87&userName=%E9%A6%99%E8%95%89%E5%A4%A7%E7%8E%8B&pNum=lll&pImg=localhost
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001655s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002561s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0020s ]
+SQL: INSERT INTO `pro` (`pName`,`price`,`pIntro`,`pImg`,`userName`,`pNum`) VALUES ('香蕉','20','抽筋必备','localhost','香蕉大王','0') [ RunTime:0.0461s ]
+
+[ 2016-07-25T16:58:31+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002355s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003211s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003422s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0022s ]
+NOTIC: [8] Undefined index: pName D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 205 行.
+NOTIC: [8] Undefined index: price D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 206 行.
+NOTIC: [8] Undefined index: pIntro D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 207 行.
+NOTIC: [8] Undefined index: pImg D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 208 行.
+NOTIC: [8] Undefined index: userName D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 209 行.
+NOTIC: [8] Undefined index: pNum D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 210 行.
+
+[ 2016-07-25T20:27:03+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proAdd?pName=%E9%A6%99%E8%95%89&price=20&pIntro=%E6%8A%BD%E7%AD%8B%E5%BF%85%E5%A4%87&userName=%E9%A6%99%E8%95%89%E5%A4%A7%E7%8E%8B&pNum=lll&pImg=localhost
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000130s ]
+INFO: [ app_init ] --END-- [ RunTime:0.030156s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.011636s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011842s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0063s ]
+SQL: INSERT INTO `pro` (`pName`,`price`,`pIntro`,`pImg`,`userName`,`pNum`) VALUES ('香蕉','20','抽筋必备','localhost','香蕉大王','0') [ RunTime:0.0494s ]
+
+[ 2016-07-25T20:50:22+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proDelete?proId=100
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002143s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003509s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0137s ]
+SQL: SELECT * FROM `pro` WHERE `proId` = 100 LIMIT 1   [ RunTime:0.0501s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002692s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002841s ]
+
+[ 2016-07-25T20:50:53+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proDelete?proId=100
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002954s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009747s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010157s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0071s ]
+SQL: SELECT * FROM `pro` WHERE `proId` = 100 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.023651s ]
+INFO: [ app_end ] --END-- [ RunTime:0.023840s ]
+
+[ 2016-07-25T20:50:54+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proDelete?proId=100
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002537s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004928s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `pro` WHERE `proId` = 100 LIMIT 1   [ RunTime:0.0011s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003221s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003415s ]
+
+[ 2016-07-25T20:50:54+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proDelete?proId=100
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002365s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.012604s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013093s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `pro` WHERE `proId` = 100 LIMIT 1   [ RunTime:0.0013s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003866s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004135s ]
+
+[ 2016-07-25T20:50:54+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proDelete?proId=100
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002505s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003572s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `pro` WHERE `proId` = 100 LIMIT 1   [ RunTime:0.0016s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003883s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004162s ]
+
+[ 2016-07-25T20:51:07+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proDelete?proId=100
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001488s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002608s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002898s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `pro` WHERE `proId` = 100  [ RunTime:0.0012s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002591s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002717s ]
+
+[ 2016-07-25T20:51:36+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proDelete?proId=100
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001676s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002568s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002744s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `pro` WHERE ( proId=1 ) LIMIT 1   [ RunTime:0.0012s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.037911s ]
+INFO: [ app_end ] --END-- [ RunTime:0.038084s ]
+
+[ 2016-07-25T20:51:37+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proDelete?proId=100
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002922s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006769s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `pro` WHERE ( proId=1 ) LIMIT 1   [ RunTime:0.0013s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004305s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004598s ]
+
+[ 2016-07-25T20:52:22+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proDelete?proId=100
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003214s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003493s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `pro` WHERE ( proId=1 ) LIMIT 1   [ RunTime:0.0011s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.017600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.017781s ]
+
+[ 2016-07-25T21:16:33+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001820s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002613s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002788s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0995s ]
+NOTIC: [8] Undefined index: pName D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 219 行.
+NOTIC: [8] Undefined index: price D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 220 行.
+NOTIC: [8] Undefined index: pIntro D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 221 行.
+NOTIC: [8] Undefined index: pImg D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 222 行.
+NOTIC: [8] Undefined index: userName D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 223 行.
+NOTIC: [8] Undefined index: pNum D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 224 行.
+
+[ 2016-07-25T21:16:40+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proDelete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001807s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001984s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002160s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0066s ]
+NOTIC: [8] Undefined index: proId D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 263 行.
+SQL: SELECT * FROM `pro` WHERE `proId` = null LIMIT 1   [ RunTime:0.0557s ]
+
+[ 2016-07-25T21:16:53+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proDelete?proId=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007532s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.013177s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013466s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `pro` WHERE `proId` = 1 LIMIT 1   [ RunTime:0.0011s ]
+SQL: DELETE FROM `pro` WHERE `proId` = 1 [ RunTime:0.1750s ]
+
+[ 2016-07-25T21:33:13+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proAdd?pName=%E9%A6%99%E8%95%89&price=20&pIntro=%E6%8A%BD%E7%AD%8B%E5%BF%85%E5%A4%87&userName=%E9%A6%99%E8%95%89%E5%A4%A7%E7%8E%8B&pNum=lll&pImg=localhost
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001708s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002526s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002685s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0030s ]
+SQL: INSERT INTO `pro` (`pName`,`price`,`pIntro`,`pImg`,`userName`,`pNum`) VALUES ('香蕉','20','抽筋必备','localhost','香蕉大王','0') [ RunTime:0.0813s ]
+
+[ 2016-07-25T21:34:37+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proUpdate?pName=%E9%A6%99%E8%95%89&price=200
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001432s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006669s ]
+ERR: 非法操作:proUpdate
+
+[ 2016-07-25T21:34:50+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proUpdateInfo?pName=%E9%A6%99%E8%95%89&price=200
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001420s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002468s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002650s ]
+ERR: 非法操作:proUpdateInfo
+
+[ 2016-07-25T21:35:10+08:00 ] ::1 /mmgyl/index.php/Home/proshow/updateProInfo?pName=%E9%A6%99%E8%95%89&price=200
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003048s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002964s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003169s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0066s ]
+NOTIC: [8] Undefined index: proId D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 295 行.
+NOTIC: [8] Undefined index: pIntro D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 298 行.
+NOTIC: [8] Undefined index: pImg D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 299 行.
+NOTIC: [8] Undefined index: userName D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 300 行.
+NOTIC: [8] Undefined index: pNum D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 301 行.
+NOTIC: [8] Undefined variable: addData D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 304 行.
+
+[ 2016-07-25T21:38:04+08:00 ] ::1 /mmgyl/index.php/Home/proshow/updateProInfo?proId=1&pName=%E9%A6%99%E8%95%89&price=200
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001525s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002899s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003149s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0068s ]
+NOTIC: [8] Undefined index: pIntro D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 298 行.
+NOTIC: [8] Undefined index: pImg D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 299 行.
+NOTIC: [8] Undefined index: userName D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 300 行.
+NOTIC: [8] Undefined index: pNum D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 301 行.
+NOTIC: [8] Undefined variable: addData D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 304 行.
+
+[ 2016-07-25T21:38:16+08:00 ] ::1 /mmgyl/index.php/Home/proshow/updateProInfo?proId=1&pName=%E9%A6%99%E8%95%89
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001487s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003240s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0045s ]
+NOTIC: [8] Undefined index: price D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 297 行.
+NOTIC: [8] Undefined index: pIntro D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 298 行.
+NOTIC: [8] Undefined index: pImg D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 299 行.
+NOTIC: [8] Undefined index: userName D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 300 行.
+NOTIC: [8] Undefined index: pNum D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 301 行.
+NOTIC: [8] Undefined variable: addData D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 304 行.
+
+[ 2016-07-25T21:38:21+08:00 ] ::1 /mmgyl/index.php/Home/proshow/updateProInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002203s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003479s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003822s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: proId D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 295 行.
+NOTIC: [8] Undefined index: pName D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 296 行.
+NOTIC: [8] Undefined index: price D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 297 行.
+NOTIC: [8] Undefined index: pIntro D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 298 行.
+NOTIC: [8] Undefined index: pImg D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 299 行.
+NOTIC: [8] Undefined index: userName D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 300 行.
+NOTIC: [8] Undefined index: pNum D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 301 行.
+NOTIC: [8] Undefined variable: addData D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 304 行.
+
+[ 2016-07-25T21:38:33+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proAdd?pName=%E9%A6%99%E8%95%89&price=20&pIntro=%E6%8A%BD%E7%AD%8B%E5%BF%85%E5%A4%87&userName=%E9%A6%99%E8%95%89%E5%A4%A7%E7%8E%8B&pNum=lll&pImg=localhost
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000084s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003033s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002916s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003278s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0040s ]
+SQL: INSERT INTO `pro` (`pName`,`price`,`pIntro`,`pImg`,`userName`,`pNum`) VALUES ('香蕉','20','抽筋必备','localhost','香蕉大王','0') [ RunTime:0.0554s ]
+
+[ 2016-07-25T21:39:09+08:00 ] ::1 /mmgyl/index.php/Home/proshow/updateProInfo?pName=%E9%A6%99%E8%95%89&price=20&pIntro=%E6%8A%BD%E7%AD%8B%E5%BF%85%E5%A4%87&userName=%E9%A6%99%E8%95%89%E5%A4%A7%E7%8E%8B&pNum=lll&pImg=localhost
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001391s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001762s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001920s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0057s ]
+NOTIC: [8] Undefined index: proId D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 295 行.
+NOTIC: [8] Undefined variable: addData D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 304 行.
+
+[ 2016-07-25T21:39:20+08:00 ] ::1 /mmgyl/index.php/Home/proshow/updateProInfo?proId=1pName=%E9%A6%99%E8%95%89&price=20&pIntro=%E6%8A%BD%E7%AD%8B%E5%BF%85%E5%A4%87&userName=%E9%A6%99%E8%95%89%E5%A4%A7%E7%8E%8B&pNum=lll&pImg=localhost
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001628s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001799s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0054s ]
+NOTIC: [8] Undefined index: pName D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 296 行.
+NOTIC: [8] Undefined variable: addData D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 304 行.
+
+[ 2016-07-25T21:39:26+08:00 ] ::1 /mmgyl/index.php/Home/proshow/updateProInfo?proId=2pName=%E9%A6%99%E8%95%89&price=20&pIntro=%E6%8A%BD%E7%AD%8B%E5%BF%85%E5%A4%87&userName=%E9%A6%99%E8%95%89%E5%A4%A7%E7%8E%8B&pNum=lll&pImg=localhost
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001672s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002268s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: pName D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 296 行.
+NOTIC: [8] Undefined variable: addData D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 304 行.
+
+[ 2016-07-25T21:40:31+08:00 ] ::1 /mmgyl/index.php/Home/proshow/updateProInfo?proId=2pName=%E9%A6%99%E8%95%89&price=20&pIntro=%E6%8A%BD%E7%AD%8B%E5%BF%85%E5%A4%87&userName=%E9%A6%99%E8%95%89%E5%A4%A7%E7%8E%8B&pNum=200&pImg=localhost
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003126s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006202s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006476s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0027s ]
+NOTIC: [8] Undefined index: pName D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 296 行.
+NOTIC: [8] Undefined variable: addData D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 304 行.
+
+[ 2016-07-25T21:40:36+08:00 ] ::1 /mmgyl/index.php/Home/proshow/updateProInfo?proId=2pName=%E9%A6%99%E8%95%89&price=20&pIntro=%E6%8A%BD%E7%AD%8B%E5%BF%85%E5%A4%87&userName=%E9%A6%99%E8%95%89%E5%A4%A7%E7%8E%8B&pNum=2000&pImg=localhost
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004790s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005074s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005266s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0021s ]
+NOTIC: [8] Undefined index: pName D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 296 行.
+NOTIC: [8] Undefined variable: addData D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 304 行.
+
+[ 2016-07-25T21:40:48+08:00 ] ::1 /mmgyl/index.php/Home/proshow/updateProInfo?proId=2&pName=%E9%A6%99%E8%95%89&price=20&pIntro=%E6%8A%BD%E7%AD%8B%E5%BF%85%E5%A4%87&userName=%E9%A6%99%E8%95%89%E5%A4%A7%E7%8E%8B&pNum=2000&pImg=localhost
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002070s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005183s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006092s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0018s ]
+NOTIC: [8] Undefined variable: addData D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 304 行.
+
+[ 2016-07-25T21:41:31+08:00 ] ::1 /mmgyl/index.php/Home/proshow/updateProInfo?proId=5&pName=%E9%A6%99%E8%95%89&price=20&pIntro=%E6%8A%BD%E7%AD%8B%E5%BF%85%E5%A4%87&userName=%E9%A6%99%E8%95%89%E5%A4%A7%E7%8E%8B&pNum=2000&pImg=localhost
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002067s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006839s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007017s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0019s ]
+NOTIC: [8] Undefined variable: addData D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 304 行.
+
+[ 2016-07-25T21:41:50+08:00 ] ::1 /mmgyl/index.php/Home/proshow/updateProInfo?proId=5&pName=%E9%A6%99%E8%95%89&price=20&pIntro=%E6%8A%BD%E7%AD%8B%E5%BF%85%E5%A4%87&userName=%E9%A6%99%E8%95%89%E5%A4%A7%E7%8E%8B&pNum=2000&pImg=localhost
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001485s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002573s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002741s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0026s ]
+
+[ 2016-07-25T21:41:57+08:00 ] ::1 /mmgyl/index.php/Home/proshow/updateProInfo?proId=5&pName=%E9%A6%99%E8%95%89&price=20&pIntro=%E6%8A%BD%E7%AD%8B%E5%BF%85%E5%A4%87&userName=%E9%A6%99%E8%95%89%E5%A4%A7%E7%8E%8B&pNum=2000&pImg=localhost
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001782s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003538s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0031s ]
+
+[ 2016-07-25T21:42:24+08:00 ] ::1 /mmgyl/index.php/Home/proshow/updateProInfo?proId=5&pName=%E9%A6%99%E8%95%89&price=20&pIntro=%E6%8A%BD%E7%AD%8B%E5%BF%85%E5%A4%87&userName=%E9%A6%99%E8%95%89%E5%A4%A7%E7%8E%8B&pNum=2000&pImg=localhost
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001998s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003257s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003490s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0021s ]
+
+[ 2016-07-25T21:43:56+08:00 ] ::1 /mmgyl/index.php/Home/proshow/updateProInfo?proId=5&pName=%E9%A6%99%E8%95%89&price=20&pIntro=%E6%8A%BD%E7%AD%8B%E5%BF%85%E5%A4%87&userName=%E9%A6%99%E8%95%89%E5%A4%A7%E7%8E%8B&pNum=2000&pImg=localhost
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001448s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003553s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003797s ]
+
+[ 2016-07-25T21:44:07+08:00 ] ::1 /mmgyl/index.php/Home/proshow/updateProInfo?proId=5&pName=%E9%A6%99%E8%95%89&price=20&pIntro=%E6%8A%BD%E7%AD%8B%E5%BF%85%E5%A4%87&userName=%E9%A6%99%E8%95%89%E5%A4%A7%E7%8E%8B&pNum=2000&pImg=localhost
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001417s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004593s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004827s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0024s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002628s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002826s ]
+
+[ 2016-07-25T21:45:29+08:00 ] ::1 /mmgyl/index.php/Home/proshow/updateProInfo?proId=5&pName=%E9%A6%99%E8%95%89&price=20&pIntro=%E6%8A%BD%E7%AD%8B%E5%BF%85%E5%A4%87&userName=%E9%A6%99%E8%95%89%E5%A4%A7%E7%8E%8B&pNum=2000&pImg=localhost
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001518s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002202s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002354s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0019s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003064s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003258s ]
+
+[ 2016-07-25T21:46:10+08:00 ] ::1 /mmgyl/index.php/Home/proshow/updateProInfo?proId=5&pName=%E9%A6%99%E8%95%89&price=20&pIntro=%E6%8A%BD%E7%AD%8B%E5%BF%85%E5%A4%87&pNum=2000&pImg=localhost
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001460s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002410s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002619s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0029s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002489s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002641s ]
+
+[ 2016-07-25T21:46:26+08:00 ] ::1 /mmgyl/index.php/Home/proshow/updateProInfo?proId=5&pName=%E9%A6%99%E8%95%89&price=20&pIntro=%E6%8A%BD%E7%AD%8B%E5%BF%85%E5%A4%87&pNum=2000&pImg=localhost
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002135s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002183s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002425s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0018s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002514s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002653s ]
+
+[ 2016-07-25T21:47:04+08:00 ] ::1 /mmgyl/index.php/Home/proshow/updateProInfo?proId=5&pName=%E9%A6%99%E8%95%89&price=20&pIntro=%E6%8A%BD%E7%AD%8B%E5%BF%85%E5%A4%87&pNum=2000&pImg=localhost
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002879s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004278s ]
+
+[ 2016-07-25T21:47:13+08:00 ] ::1 /mmgyl/index.php/Home/proshow/updateProInfo?proId=5&pName=%E9%A6%99%E8%95%89&price=20&pIntro=%E6%8A%BD%E7%AD%8B%E5%BF%85%E5%A4%87&pNum=2000&pImg=localhost
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002091s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003944s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004279s ]
+
+[ 2016-07-25T21:50:30+08:00 ] ::1 /mmgyl/index.php/Home/proshow/updateProInfo?proId=5&pName=%E9%A6%99%E8%95%89&price=20&pIntro=%E6%8A%BD%E7%AD%8B%E5%BF%85%E5%A4%87&pNum=2000&pImg=localhost
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002177s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003401s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003694s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0057s ]
+SQL: UPDATE `pro` SET `proId`='5',`pName`='香蕉',`price`='20',`pIntro`='抽筋必备',`pImg`='localhost',`pNum`='2000' WHERE ( proId=0 ) [ RunTime:0.1121s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.013911s ]
+INFO: [ app_end ] --END-- [ RunTime:0.014174s ]
+
+[ 2016-07-25T21:51:00+08:00 ] ::1 /mmgyl/index.php/Home/proshow/updateProInfo?proId=5&pName=%E9%A6%99%E8%95%89&price=20&pIntro=%E6%8A%BD%E7%AD%8B%E5%BF%85%E5%A4%87&pNum=2000&pImg=localhost
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002624s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004472s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004734s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0022s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003339s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003554s ]
+
+[ 2016-07-25T21:51:22+08:00 ] ::1 /mmgyl/index.php/Home/proshow/updateProInfo?proId=5&pName=%E8%8B%B9%E6%9E%9C&price=20&pIntro=%E6%8A%BD%E7%AD%8B%E5%BF%85%E5%A4%87&pNum=2000&pImg=localhost
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002036s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003397s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003615s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0240s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003085s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003347s ]
+
+[ 2016-07-25T21:51:38+08:00 ] ::1 /mmgyl/index.php/Home/proshow/updateProInfo?proId=5&pName=%E8%8B%B9%E6%9E%9C&price=20&pIntro=%E6%8A%BD%E7%AD%8B%E5%BF%85%E5%A4%87&pNum=2000&pImg=localhost
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002405s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002758s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002921s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0019s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002490s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002629s ]
+
+[ 2016-07-25T21:51:41+08:00 ] ::1 /mmgyl/index.php/Home/proshow/updateProInfo?proId=5&pName=%E8%8B%B9%E6%9E%9C&price=20&pIntro=%E6%8A%BD%E7%AD%8B%E5%BF%85%E5%A4%87&pNum=2000&pImg=localhost
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000100s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003127s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002654s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002862s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002701s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002856s ]
+
+[ 2016-07-25T21:51:43+08:00 ] ::1 /mmgyl/index.php/Home/proshow/updateProInfo?proId=5&pName=%E8%8B%B9%E6%9E%9C&price=20&pIntro=%E6%8A%BD%E7%AD%8B%E5%BF%85%E5%A4%87&pNum=2000&pImg=localhost
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001915s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002957s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003184s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0018s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002489s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002629s ]
+
+[ 2016-07-25T21:56:26+08:00 ] ::1 /mmgyl/index.php/Home/proshow/updateProInfo?proId=5&pName=%E8%8B%B9%E6%9E%9C&price=20&pIntro=%E6%8A%BD%E7%AD%8B%E5%BF%85%E5%A4%87&pNum=2000&pImg=localhost
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001597s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002481s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0023s ]
+SQL: UPDATE `pro` SET `pName`='苹果',`price`='20',`pIntro`='抽筋必备',`pImg`='localhost',`pNum`='2000' WHERE `proId` = 5 [ RunTime:0.1056s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002477s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002607s ]
+
+[ 2016-07-25T21:58:07+08:00 ] ::1 /mmgyl/index.php/Home/proshow/updateProInfo?proId=5&pName=%E6%A1%94%E5%AD%90&price=20&pIntro=%E6%8A%BD%E7%AD%8B%E5%BF%85%E5%A4%87&pNum=2000&pImg=localhost
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001488s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002679s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0025s ]
+SQL: UPDATE `pro` SET `pName`='桔子',`price`='20',`pIntro`='抽筋必备',`pImg`='localhost',`pNum`='2000' WHERE `proId` = 5 [ RunTime:0.0661s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002632s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002765s ]
+
+[ 2016-07-25T21:58:55+08:00 ] ::1 /mmgyl/index.php/Home/proshow/updateProInfo?proId=6&pName=%E6%A1%94%E5%AD%90&price=20&pIntro=%E6%8A%BD%E7%AD%8B%E5%BF%85%E5%A4%87&pNum=2000&pImg=localhost
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002935s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003153s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0022s ]
+SQL: UPDATE `pro` SET `pName`='桔子',`price`='20',`pIntro`='抽筋必备',`pImg`='localhost',`pNum`='2000' WHERE `proId` = 6 [ RunTime:0.0702s ]
+
+[ 2016-07-25T21:59:01+08:00 ] ::1 /mmgyl/index.php/Home/proshow/updateProInfo?proId=100&pName=%E6%A1%94%E5%AD%90&price=20&pIntro=%E6%8A%BD%E7%AD%8B%E5%BF%85%E5%A4%87&pNum=2000&pImg=localhost
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001406s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002432s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0018s ]
+SQL: UPDATE `pro` SET `pName`='桔子',`price`='20',`pIntro`='抽筋必备',`pImg`='localhost',`pNum`='2000' WHERE `proId` = 100 [ RunTime:0.0008s ]
+
+[ 2016-07-25T21:59:11+08:00 ] ::1 /mmgyl/index.php/Home/proshow/updateProInfo?proId=100&price=20&pIntro=%E6%8A%BD%E7%AD%8B%E5%BF%85%E5%A4%87&pNum=2000&pImg=localhost
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002376s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004193s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0019s ]
+NOTIC: [8] Undefined index: pName D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 296 行.
+SQL: UPDATE `pro` SET `pName`=NULL,`price`='20',`pIntro`='抽筋必备',`pImg`='localhost',`pNum`='2000' WHERE `proId` = 100 [ RunTime:0.0008s ]
+
+[ 2016-07-25T22:01:28+08:00 ] ::1 /mmgyl/index.php/Home/proshow/updateProInfo?proId=100&price=20&pIntro=%E6%8A%BD%E7%AD%8B%E5%BF%85%E5%A4%87&pNum=2000&pImg=localhost
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000332s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002054s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002460s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0029s ]
+NOTIC: [8] Undefined index: pName D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 263 行.
+SQL: UPDATE `pro` SET `pName`=NULL,`price`='20',`pIntro`='抽筋必备',`pImg`='localhost',`pNum`='2000' WHERE `proId` = 100 [ RunTime:0.0010s ]
+
+[ 2016-07-25T22:01:36+08:00 ] ::1 /mmgyl/index.php/Home/proshow/updateProInfo?proId=5&price=20&pIntro=%E6%8A%BD%E7%AD%8B%E5%BF%85%E5%A4%87&pNum=2000&pImg=localhost
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001495s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002444s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0021s ]
+NOTIC: [8] Undefined index: pName D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 263 行.
+SQL: UPDATE `pro` SET `pName`=NULL,`price`='20',`pIntro`='抽筋必备',`pImg`='localhost',`pNum`='2000' WHERE `proId` = 5 [ RunTime:0.1841s ]
+
+[ 2016-07-25T22:01:38+08:00 ] ::1 /mmgyl/index.php/Home/proshow/updateProInfo?proId=5&price=20&pIntro=%E6%8A%BD%E7%AD%8B%E5%BF%85%E5%A4%87&pNum=2000&pImg=localhost
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001448s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003961s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004468s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0018s ]
+NOTIC: [8] Undefined index: pName D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 263 行.
+SQL: UPDATE `pro` SET `pName`=NULL,`price`='20',`pIntro`='抽筋必备',`pImg`='localhost',`pNum`='2000' WHERE `proId` = 5 [ RunTime:0.2412s ]
+
+[ 2016-07-25T22:01:41+08:00 ] ::1 /mmgyl/index.php/Home/proshow/updateProInfo?proId=5&price=20&pIntro=%E6%8A%BD%E7%AD%8B%E5%BF%85%E5%A4%87&pNum=2000&pImg=localhost
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002434s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002637s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0036s ]
+NOTIC: [8] Undefined index: pName D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 263 行.
+SQL: UPDATE `pro` SET `pName`=NULL,`price`='20',`pIntro`='抽筋必备',`pImg`='localhost',`pNum`='2000' WHERE `proId` = 5 [ RunTime:0.0913s ]
+
+[ 2016-07-25T22:01:49+08:00 ] ::1 /mmgyl/index.php/Home/proshow/updateProInfo?proId=5&price=20&pIntro=%E6%8A%BD%E7%AD%8B%E5%BF%85%E5%A4%87&pNum=2000&pImg=localhost
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001582s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003065s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003329s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0025s ]
+NOTIC: [8] Undefined index: pName D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 263 行.
+SQL: UPDATE `pro` SET `pName`=NULL,`price`='20',`pIntro`='抽筋必备',`pImg`='localhost',`pNum`='2000' WHERE `proId` = 5 [ RunTime:0.0503s ]
+
+[ 2016-07-25T22:01:53+08:00 ] ::1 /mmgyl/index.php/Home/proshow/updateProInfo?proId=5&price=205&pIntro=%E6%8A%BD%E7%AD%8B%E5%BF%85%E5%A4%87&pNum=2000&pImg=localhost
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001595s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002081s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002269s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0018s ]
+NOTIC: [8] Undefined index: pName D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 263 行.
+SQL: UPDATE `pro` SET `pName`=NULL,`price`='205',`pIntro`='抽筋必备',`pImg`='localhost',`pNum`='2000' WHERE `proId` = 5 [ RunTime:0.0518s ]
+

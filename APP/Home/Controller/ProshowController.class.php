@@ -3,15 +3,24 @@ namespace Home\Controller;
 use Think\Controller;
 use Think\Model;
 class ProshowController extends Controller {
-	/*
-	 * 商品详情展示
-	 */
+	
+	
+/** 
+* proShow 
+* 
+* 商品详情展示
+* 
+* @param string $pSn 
+* @param string $param2 
+* @return json
+*/ 
+
     public function proShow(){
     	$pro = M("pro");
 		$pro_picture = M("pro_picture");
 //		$data = $pro ->where(pSn = )
 //      $model = new Model();
-		$where['pSn'] = $_GET['pSn'];
+		$where['proId'] = $_GET['proId'];
 //		$data = $model->query("select * from `pro` left join `pro_picture` using(pSn) where pSn=$pSn");
 //		$data['basicInfo'] = $model->query("select * from `pro`  where pSn=$pSn");
 //		$data['picUrl'] = $model->query("select picUrl from `pro_picture`  where pSn=$pSn");
@@ -176,7 +185,7 @@ class ProshowController extends Controller {
 	 public function makeChoiceForYou()
 	 {
     	$pro = M("pro");
-	    $data['basicInfo'] = $pro -> field('pImg,pSn') ->limit(0,4) -> select();
+	    $data['basicInfo'] = $pro -> field('pImg,proId') ->limit(0,4) -> select();
 			  if ($data['basicInfo'] != NULL) 
 			  {
 				$return['ret'] = "1";
@@ -190,6 +199,128 @@ class ProshowController extends Controller {
 		       }
 		}
 	 
+		/** 
+		* proAdd 
+		* 
+		* 发布商品
+		* 
+		* @param string $pName
+		* @param string $price
+		* @param string $pIntro
+		* @param string $pImg
+	    * @param string $userName
+		* @param string $pNum (可选)
+		* 
+		* @return json
+		*/ 
+		public function proAdd()
+		{
+    	    $pro = M("pro");
+			$addData['pName'] = $_GET['pName'];
+			$addData['price'] = $_GET['price'];
+			$addData['pIntro'] = $_GET['pIntro'];
+			$addData['pImg'] = $_GET['pImg'];
+			$addData['userName'] = $_GET['userName'];
+			$addData['pNum'] = $_GET['pNum'];
+			
+			try {
+			$result = $pro -> add($addData);
+			} catch(\Exception $e) {
+				$return["ret"] = "400";
+				//发布商品异常
+				$return["data"] = "";
+				$return["msg"] = "错误请求";
+				$this -> ajaxReturn($return);
+			}
+			if ($result > 0) {
+				$return["ret"] = "20";
+				$return["data"] = "商品发布成功";
+				$return["msg"] = "";
+				$this -> ajaxReturn($return);
+			} else {
+				$return["ret"] = "0";
+				//注册失败
+				$return["data"] = "发布商品失败";
+				$return["msg"] = "";
+				$this -> ajaxReturn($return);
+			}
+			
+		}
+		
+	    /** 
+		* proAdd 
+		* 
+		* 更改商品信息
+		* 
+		* @param string $proId
+		* 
+		* @return json
+		*/ 	
+		public function updateProInfo()
+		{
+			$pro = M("pro");
+			$proId['proId'] = $_GET['proId'];
+			$updateData['pName'] = $_GET['pName'];
+			$updateData['price'] = $_GET['price'];
+			$updateData['pIntro'] = $_GET['pIntro'];
+			$updateData['pImg'] = $_GET['pImg'];
+			$updateData['pNum'] = $_GET['pNum'];
+			
+			try {
+			$result = $pro ->where($proId)->save($updateData);
+			
+			} catch(\Exception $e) {
+				$return["ret"] = "400";
+				//发布商品异常
+				$return["data"] = "";
+				$return["msg"] = "错误请求";
+				$this -> ajaxReturn($return);
+			}
+			if ($result > 0) {
+				$return["ret"] = "20";
+				$return["data"] = "更新商品信息成功";
+				$return["msg"] = "";
+				$this -> ajaxReturn($return);
+			} else {
+				$return["ret"] = "0";
+				//注册失败
+				$return["data"] = "更新商品信息失败";
+				$return["msg"] = "";
+				$this -> ajaxReturn($return);
+			}
+		}
+		
+		/** 
+		* proAdd 
+		* 
+		* 发布商品
+		* 
+		* @param string $proId
+		* 
+		* @return json
+		*/ 
+        public function ProDelete()
+		{
+			$pro = M("pro");
+			$id['proId'] = $_GET['proId'];
+			//判断是否存在此商品
+			$ifExist = $pro -> where($id) ->find();
+			//不存在此商品
+			if(!$ifExist)
+			{
+				$return["ret"] = "400";
+				$return["data"] = "";
+				$return["msg"] = "不存在此商品";
+				$this -> ajaxReturn($return);
+			}
+			else{
+				$result = $pro -> where($id) ->delete();
+				$return["ret"] = "200";
+				$return["data"] = "删除成功";
+				$return["msg"] = "";
+				$this -> ajaxReturn($return);
+			}
+		}
 		
 
 	 
