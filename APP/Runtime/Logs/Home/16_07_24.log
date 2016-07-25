@@ -1,0 +1,355 @@
+[ 2016-07-24T00:29:47+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proShow?pSn=20160723002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000629s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001080s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `pro_picture` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `pro` WHERE `pSn` = '20160723002'  [ RunTime:0.0003s ]
+SQL: SELECT `picUrl` FROM `pro_picture` WHERE `pSn` = '20160723002'  [ RunTime:0.0002s ]
+
+[ 2016-07-24T00:53:08+08:00 ] ::1 /mmgyl/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000779s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001618s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001708s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000975s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001019s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000974s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001009s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001041s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001080s ]
+
+[ 2016-07-24T01:03:35+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proSearch?searchtext=%E5%93%86%E5%95%A6A%E6%A2%A6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000736s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001201s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001249s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `pro` WHERE `pName` LIKE '%哆啦A梦%' OR `pSn` LIKE '%哆啦A梦%'  [ RunTime:0.0003s ]
+
+[ 2016-07-24T01:03:38+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getSecondCate?firstCateId=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000775s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001213s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001267s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0005s ]
+SQL: SELECT `cateName`,`pid` FROM `cate` WHERE ( pid=1 )  [ RunTime:0.0002s ]
+
+[ 2016-07-24T01:04:30+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proCate?cateName=%E5%B9%B2%E6%9E%9C
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000677s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001123s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001172s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0005s ]
+SQL: SELECT `cId` FROM `cate` WHERE `cateName` = '干果'  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: cId G:\APPserver\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 46 行.
+
+[ 2016-07-24T01:05:26+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proCate?cateName=%E5%B9%B2%E6%9E%9C
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000723s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001157s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001216s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0005s ]
+SQL: SELECT `pid` FROM `cate` WHERE `cateName` = '干果' LIMIT 0,1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `pro` WHERE ( cId=1 )  [ RunTime:0.0003s ]
+
+[ 2016-07-24T01:05:29+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proCate?cateName=%E5%B9%B2%E6%9E%9C1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000700s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001087s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001145s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0006s ]
+SQL: SELECT `pid` FROM `cate` WHERE `cateName` = '干果1' LIMIT 0,1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 G:\APPserver\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 46 行.
+
+[ 2016-07-24T08:07:08+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proCate?cateName=%E5%B9%B2%E6%9E%9C
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000990s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001392s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0006s ]
+SQL: SELECT `pid` FROM `cate` WHERE `cateName` = '干果' LIMIT 0,1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `pro` WHERE ( cId=1 )  [ RunTime:0.0002s ]
+
+[ 2016-07-24T08:07:12+08:00 ] ::1 /mmgyl/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000811s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001440s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000931s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000975s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001091s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001125s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001317s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001352s ]
+
+[ 2016-07-24T08:09:23+08:00 ] ::1 /mmgyl/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000701s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001383s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000876s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000919s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001254s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001290s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002017s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002071s ]
+
+[ 2016-07-24T11:17:12+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proSearch?searchtext=2016
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000739s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001220s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001264s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `pro` WHERE `pName` LIKE '%2016%' OR `pSn` LIKE '%2016%'  [ RunTime:0.0004s ]
+
+[ 2016-07-24T11:17:13+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proSearch?searchtext=2016
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000706s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001187s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001232s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `pro` WHERE `pName` LIKE '%2016%' OR `pSn` LIKE '%2016%'  [ RunTime:0.0003s ]
+
+[ 2016-07-24T11:17:13+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proSearch?searchtext=2016
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000800s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001182s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001229s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `pro` WHERE `pName` LIKE '%2016%' OR `pSn` LIKE '%2016%'  [ RunTime:0.0003s ]
+
+[ 2016-07-24T11:17:26+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proSearch?searchtext=2016
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001357s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `pro` WHERE `pName` LIKE '%2016%' OR `pSn` LIKE '%2016%'  [ RunTime:0.0003s ]
+
+[ 2016-07-24T11:17:32+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proSearch?searchtext=2016
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000699s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001205s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001251s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `pro` WHERE `pName` LIKE '%2016%' OR `pSn` LIKE '%2016%'  [ RunTime:0.0003s ]
+
+[ 2016-07-24T11:17:33+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proSearch?searchtext=2016
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000680s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001167s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001213s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `pro` WHERE `pName` LIKE '%2016%' OR `pSn` LIKE '%2016%'  [ RunTime:0.0003s ]
+
+[ 2016-07-24T11:18:03+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proSearch?searchtext=2016
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000707s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001237s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001283s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `pro` WHERE `pName` LIKE '%2016%' OR `pSn` LIKE '%2016%'  [ RunTime:0.0004s ]
+
+[ 2016-07-24T21:04:48+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proCate?cateName=%E5%B9%B2%E6%9E%9C
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000656s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000872s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000936s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0005s ]
+SQL: SELECT `pid` FROM `cate` WHERE `cateName` = '干果' LIMIT 0,1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `pro` WHERE ( cId=1 )  [ RunTime:0.0002s ]
+
+[ 2016-07-24T21:05:02+08:00 ] ::1 /mmgyl/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000739s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001210s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001256s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000909s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000992s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002567s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002616s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002441s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002492s ]
+
+[ 2016-07-24T21:05:07+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proCate?cateName=%E5%B9%B2%E6%9E%9C
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000778s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001124s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001186s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0006s ]
+SQL: SELECT `pid` FROM `cate` WHERE `cateName` = '干果' LIMIT 0,1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `pro` WHERE ( cId=1 )  [ RunTime:0.0004s ]
+
+[ 2016-07-24T21:10:58+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proCate?cateName=%E5%B9%B2%E6%9E%9C
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000714s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001305s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0005s ]
+SQL: SELECT `pId` FROM `cate` WHERE `cateName` = '干果' LIMIT 0,1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: pId G:\APPserver\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 46 行.
+SQL: SELECT * FROM `pro` WHERE ( cId=0 )  [ RunTime:0.0003s ]
+
+[ 2016-07-24T21:11:02+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proCate?cateName=%E5%B9%B2%E6%9E%9C
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000727s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001393s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001517s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0005s ]
+SQL: SELECT `pId` FROM `cate` WHERE `cateName` = '干果' LIMIT 0,1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: pId G:\APPserver\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 46 行.
+SQL: SELECT * FROM `pro` WHERE ( cId=0 )  [ RunTime:0.0004s ]
+
+[ 2016-07-24T21:11:04+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proCate?cateName=%E5%B9%B2%E6%9E%9C
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000739s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001364s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0005s ]
+SQL: SELECT `pId` FROM `cate` WHERE `cateName` = '干果' LIMIT 0,1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: pId G:\APPserver\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 46 行.
+SQL: SELECT * FROM `pro` WHERE ( cId=0 )  [ RunTime:0.0003s ]
+
+[ 2016-07-24T21:13:15+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proCate?cateName=%E5%B9%B2%E6%9E%9C
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000672s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001092s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0006s ]
+SQL: SELECT `pId` FROM `cate` WHERE `cateName` = '干果' LIMIT 0,1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: pId G:\APPserver\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 46 行.
+SQL: SELECT * FROM `pro` WHERE ( cId=0 )  [ RunTime:0.0003s ]
+
+[ 2016-07-24T21:14:00+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proCate?cateName=%E5%B9%B2%E6%9E%9C
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000800s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001177s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001224s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0006s ]
+SQL: SELECT `pid` FROM `cate` WHERE `cateName` = '干果' LIMIT 0,1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: pid1 G:\APPserver\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 49 行.
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+
+[ 2016-07-24T21:14:28+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proCate?cateName=%E5%B9%B2%E6%9E%9C
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000683s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000955s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001002s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0005s ]
+SQL: SELECT `pid` FROM `cate` WHERE `cateName` = '干果' LIMIT 0,1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: pId G:\APPserver\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 47 行.
+
+[ 2016-07-24T21:14:42+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proCate?cateName=%E5%B9%B2%E6%9E%9C
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000850s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001215s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001459s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0006s ]
+SQL: SELECT `pid` FROM `cate` WHERE `cateName` = '干果' LIMIT 0,1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `pro` WHERE ( cId=1 )  [ RunTime:0.0003s ]
+
+[ 2016-07-24T21:15:13+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proCate?cateName=%E5%B9%B2%E6%9E%9C
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000893s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001424s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0005s ]
+SQL: SELECT `pid` FROM `cate` WHERE `cateName` = '干果' LIMIT 0,1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `pro` WHERE ( cId=1 )  [ RunTime:0.0003s ]
+
+[ 2016-07-24T21:15:16+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proCate?cateName=%E5%B9%B2%E6%9E%9C
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000666s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001246s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001321s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0006s ]
+SQL: SELECT `pid` FROM `cate` WHERE `cateName` = '干果' LIMIT 0,1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `pro` WHERE ( cId=1 )  [ RunTime:0.0003s ]
+
