@@ -844,3 +844,37 @@ SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0018s ]
 NOTIC: [8] Undefined index: pName D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 263 行.
 SQL: UPDATE `pro` SET `pName`=NULL,`price`='205',`pIntro`='抽筋必备',`pImg`='localhost',`pNum`='2000' WHERE `proId` = 5 [ RunTime:0.0518s ]
 
+[ 2016-07-25T22:40:45+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001662s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002542s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0023s ]
+NOTIC: [8] Undefined index: pName D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 219 行.
+NOTIC: [8] Undefined index: price D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 220 行.
+NOTIC: [8] Undefined index: pIntro D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 221 行.
+NOTIC: [8] Undefined index: pImg D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 222 行.
+NOTIC: [8] Undefined index: userName D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 223 行.
+NOTIC: [8] Undefined index: pNum D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 224 行.
+
+[ 2016-07-25T22:40:51+08:00 ] ::1 /mmgyl/index.php/Home/proAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001561s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002433s ]
+ERR: 无法加载控制器:ProAdd
+
+[ 2016-07-25T22:41:01+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proAdd?pName=%E9%A6%99%E8%95%89&price=20&pIntro=%E6%8A%BD%E7%AD%8B%E5%BF%85%E5%A4%87&userName=%E9%A6%99%E8%95%89%E5%A4%A7%E7%8E%8B&pNum=lll&pImg=localhost
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001569s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004168s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004406s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0021s ]
+SQL: INSERT INTO `pro` (`pName`,`price`,`pIntro`,`pImg`,`userName`,`pNum`) VALUES ('香蕉','20','抽筋必备','localhost','香蕉大王','0') [ RunTime:0.1318s ]
+

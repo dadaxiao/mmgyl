@@ -1,0 +1,109 @@
+[ 2016-07-27T09:15:10+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proSearch?searchtext=%E5%93%86%E5%95%A6A%E6%A2%A6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001912s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002833s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003088s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0046s ]
+SQL: SELECT `proid`,`pname`,`price`,`pimg` FROM `pro` WHERE `pName` LIKE '%哆啦A梦%' OR `pSn` = '哆啦A梦'  [ RunTime:0.0015s ]
+
+[ 2016-07-27T09:15:17+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proSearch?searchtext=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001568s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002768s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002970s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0027s ]
+
+[ 2016-07-27T09:15:26+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proSearch?searchtext=%E7%9A%84
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001743s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002790s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002951s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0025s ]
+SQL: SELECT `proid`,`pname`,`price`,`pimg` FROM `pro` WHERE `pName` LIKE '%的%' OR `pSn` = '的'  [ RunTime:0.0011s ]
+
+[ 2016-07-27T09:16:27+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proSearch?searchtext=%E9%A6%99
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001710s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003632s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0025s ]
+SQL: SELECT `proid`,`pname`,`price`,`pimg` FROM `pro` WHERE `pName` LIKE '%香%' OR `pSn` = '香'  [ RunTime:0.0011s ]
+
+[ 2016-07-27T09:19:18+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proSearch?searchtext=%E9%A6%99&_=1469582357403
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001534s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002249s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002414s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0024s ]
+SQL: SELECT `proid`,`pname`,`price`,`pimg` FROM `pro` WHERE `pName` LIKE '%香%' OR `pSn` = '香'  [ RunTime:0.0011s ]
+
+[ 2016-07-27T09:20:05+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proSearch?searchtext=%E9%A6%99&_=1469582404478
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001456s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002097s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002236s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0021s ]
+SQL: SELECT `proid`,`pname`,`price`,`pimg` FROM `pro` WHERE `pName` LIKE '%香%' OR `pSn` = '香'  [ RunTime:0.0010s ]
+
+[ 2016-07-27T09:21:26+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proSearch?searchtext=%E9%A6%99
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002507s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002206s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002369s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0039s ]
+SQL: SELECT `proid`,`pname`,`price`,`pimg` FROM `pro` WHERE `pName` LIKE '%香%' OR `pSn` = '香'  [ RunTime:0.0020s ]
+
+[ 2016-07-27T09:21:27+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proSearch?searchtext=%E9%A6%99&_=1469582486059
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001473s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002084s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002219s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0017s ]
+SQL: SELECT `proid`,`pname`,`price`,`pimg` FROM `pro` WHERE `pName` LIKE '%香%' OR `pSn` = '香'  [ RunTime:0.0010s ]
+
+[ 2016-07-27T09:22:07+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proSearch?searchtext=%E9%A6%99&_=1469582526872
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001687s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002135s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002274s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0021s ]
+SQL: SELECT `proid`,`pname`,`price`,`pimg` FROM `pro` WHERE `pName` LIKE '%香%' OR `pSn` = '香'  [ RunTime:0.0009s ]
+
+[ 2016-07-27T09:22:24+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proSearch?searchtext=%E9%A6%99&_=1469582543541
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001556s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002175s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002343s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0023s ]
+SQL: SELECT `proid`,`pname`,`price`,`pimg` FROM `pro` WHERE `pName` LIKE '%香%' OR `pSn` = '香'  [ RunTime:0.0010s ]
+
+[ 2016-07-27T09:22:32+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proSearch?searchtext=%E9%A6%99&_=1469582551146
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001555s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002167s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002303s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0017s ]
+SQL: SELECT `proid`,`pname`,`price`,`pimg` FROM `pro` WHERE `pName` LIKE '%香%' OR `pSn` = '香'  [ RunTime:0.0009s ]
+
