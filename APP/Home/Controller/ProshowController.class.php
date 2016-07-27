@@ -141,15 +141,21 @@ class ProshowController extends Controller {
 		* @return json
 		*
 		*/ 
-       public function proShow(){
+	    public function proShow(){
     	$pro = M("pro");
-		// $pro_picture = M("pro_picture");
 		$where['proId'] = $_GET['proId'];
+		$proId = $_GET['proId'];  //缓存下标
+		$cacheIndex = "$proId";
+		$cache=S("$cacheIndex");
+		if($cache==NULL){    
 		$data = $pro -> where($where) -> select();
+        //没有缓存数据
 		if ($data != NULL) {
 			$return['ret'] = "200";
 			$return['data'] = $data;
 			$return['msg'] = "";
+			 
+			S("$cacheIndex",$return,120); //写入缓存，时间120s  
 			$this -> ajaxReturn($return);
     }
 		//获取商品失败
@@ -157,11 +163,18 @@ class ProshowController extends Controller {
 			$return["ret"] = "400";
 			$return['data'] = "获取商品信息失败";
 			$return['msg'] = "";
+			S("$cacheIndex",$return,120); 
 			$this -> ajaxReturn($return);
 		}
-}
-	
-	
+	 }
+	 //有缓存数据
+		 else
+		 {
+		 	$this -> ajaxReturn($cache);
+		 }
+
+	    } 
+   
 	    /** 
 		* secondCateProList 
 		* 
@@ -176,6 +189,9 @@ class ProshowController extends Controller {
 	 	$cate = M("cate");
     	$pro = M("pro");
 		$cId = $_GET['secondCateId'];
+		$cacheIndex = "$cId";
+		$cache=S("$cacheIndex");
+		if($cache==NULL){   
 		try
 		{
 		$result = $pro -> $data = $pro -> field('proId,pname,price,pimg') -> where('cId='.$cId) ->select();
@@ -185,6 +201,7 @@ class ProshowController extends Controller {
 		 	$return["ret"] = "400";
 		 	$return["data"] = "";
 		 	$return['msg'] = "错误请求，参数错误";
+		 	S("$cacheIndex",$return,120); //写入缓存，时间120s  
 			$this -> ajaxReturn($return);
 		 }
 	    if ($result != NULL) {
@@ -192,6 +209,7 @@ class ProshowController extends Controller {
 			$return["ret"] = "200";
 			$return["data"] = $result;
 			$return["msg"] = "";
+			S("$cacheIndex",$return,120); //写入缓存，时间120s  
 			$this -> ajaxReturn($return);
 		} 
 		else 
@@ -200,10 +218,19 @@ class ProshowController extends Controller {
 			//注册失败
 			$return["data"] = "此分类暂无商品";
 			$return["msg"] = "";
+			S("$cacheIndex",$return,120); //写入缓存，时间120s  
 			$this -> ajaxReturn($return);
 		}
 	
 	 }
+	 //有缓存数据
+		 else
+		 {
+		 	$this -> ajaxReturn($cache);
+		 }
+
+	    
+    }
 	
 
 	    /** 
@@ -218,11 +245,15 @@ class ProshowController extends Controller {
 	public function getFirstCate()
 	{
 	 	$cate = M("cate");
+
+		$cache=S("cache");
+		if($cache==NULL){  
 		$data = $cate -> field('cateName,cId') -> where('pid=0') ->select();
 		if ($data != NULL) {
 			$return['ret'] = "20";
 			$return['data'] = $data;
 			$return['msg'] = "";
+			S("cache",$return,120);
 			$this -> ajaxReturn($return);
     }
 		//获取一级分类失败
@@ -230,10 +261,18 @@ class ProshowController extends Controller {
 			$return["ret"] = "400";
 			$return['data'] = "一级分类不存在";
 			$return['msg'] = "";
+			S("cache",$return,120);
 			$this -> ajaxReturn($return);
 		}	
 		
 	}
+
+	     //有缓存数据
+		 else
+		 {
+		 	$this -> ajaxReturn($cache);
+		 } 
+    }
 
 	
     /** 
@@ -245,24 +284,33 @@ class ProshowController extends Controller {
 	* @return json
 	*
 	*/ 
-	 public function getSecondCate()
+	
+public function getSecondCate()
 	 {
 	 	$cate = M("cate");
 		$firstCateId = $_GET['firstCateId'];
+		$cacheIndex = "$firstCateId";
+		$secondCateScahe=S("$cacheIndex");
+		if($secondCateScahe==NULL){   
 		try{
 		$data = $cate -> field('cateName,pid,cId') -> where('pid='.$firstCateId) ->select();
 		if ($data != NULL) {
 			$return['ret'] = "200";
 			$return['data'] = $data;
-			$return['msg'] = "";
+			$return['msg'] = "";	
+		    S("$cacheIndex",$return,120); //写入缓存，时间120s  
 			$this -> ajaxReturn($return);
+
+			
     }
 		//获取二级分类失败
 		else {
 			$return["ret"] = "400";
 			$return['data'] = "获取二级分类失败";
 			$return['msg'] = "";
+			S("$cacheIndex",$return,120); //写入缓存，时间120s  
 			$this -> ajaxReturn($return);
+			
 		}	
 	 	
 	 }
@@ -271,10 +319,17 @@ class ProshowController extends Controller {
 	 	$return["ret"] = "400";
 	 	$return["data"] = "";
 	 	$return['msg'] = "错误请求";
-			$this -> ajaxReturn($return);
+	 	S("$cacheIndex",$return,120); //写入缓存，时间120s  
+		$this -> ajaxReturn($return);
+			
+	     }
 	  }
-	 }
-	
+	   else
+		 {
+		 	$this -> ajaxReturn($secondCateScahe);
+		 } 
+
+	}	
 	    /** 
 		* proSearch 
 		* 
@@ -373,5 +428,48 @@ class ProshowController extends Controller {
 			   $this -> ajaxReturn($return);
 		       }
 		}
+
+
+
+
+		/*
+		*测试缓存
+		*/
+     
+   public function cache(){       
+       //如果有缓存，则读取缓存数据       
+       //如果没有缓存，则读取数据库当中的数据放入缓存       
+       $firstCateId = $_GET['firstCateId'];
+       // $lists = "$lists";
+       $listsIndex = "$firstCateId";
+       var_dump($lists);
+           
+               $lists=S("$listsIndex");
+       if($lists==NULL){                           
+        $cate = M("cate");
+		
+	
+		$data = $cate -> field('cateName,pid,cId') -> where('pid='.$firstCateId) ->select();
+         S("$listsIndex",$data,5);   
+         echo '这是直接读取数据库的数据';  
+         dump($data);     
+          }
+          else{
+          	 dump($lists);
+          }   
+      
+       } 
+
+      /*
+       * 首页的某个类别对应的5张图片，价格，名字，iproId
+       */
+      public function getCateList()
+      {
+    	$pro = M("pro");
+          
+
+      }
+
+
 
 }
