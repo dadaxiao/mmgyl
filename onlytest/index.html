@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>
+	</head>
+	<style>
+	#save-data{
+		width: 200px;
+		height: 200px;
+		border: 1px solid #ccc;
+	}	
+	</style>
+	
+	<script>
+//		var obj = JSON.parse(data);
+		$(function(){
+			$("#btn").click(function(){
+				$.ajax({
+					contentType:"application/json",
+					type:"GET",
+					// url:"http://localhost/mmgyl/index.php/Home/proshow/proSearch?"+"searchtext="变量,
+					url:"http://localhost/mmgyl/index.php/Home/proshow/proSearch?searchtext=香",
+					dataType:"json",
+					cache:false,
+					async:true,
+					success: function(datac){
+					
+			            //Images/Product/20160723001/01.jpg
+						// alert(datac.data[0].id);
+						// alert(data);
+						
+						
+					/*	document.getElementById("txtHint1").innerHTML=datac.data[0].proid; 
+						document.getElementById("img1").src=datac.data[0].pimg; 
+              
+              */
+
+
+           /*   //遍历data
+               $.each(datac.data[0],function(index,value){  
+                   alert(value); 
+               });
+               */
+              
+
+         
+
+
+             /*
+            //data[0],[1]的价格  ++++++++++++++++++++++++
+            //http://localhost/mmgyl/index.php/Home/proshow/getFirstCate
+			for (var i=0;i<datac.data.length;i++) {
+				
+				alert(datac.data[i].catename);
+			}
+			*/
+		
+				for (var i=0,len=datac.data.length;i<len;i++) {
+
+                    document.getElementById("p"+i).innerHTML=datac.data[i].proid; 
+
+                }
+ 
+
+
+
+
+						// document.getElementById("img1").src="/xx/new.jpg";
+				},
+					error: function(data){
+						alert("出现错误");
+					}
+				});
+			});
+		})
+	</script>
+	<body>
+	        <p id="p0"></p>
+			<p id="p1"></p>
+			<p id="p2"></p>
+	<p id="txtHint1">asdfa</p>
+	<img id="img1" src="" >
+		<div id="test">
+			<form action="" method="post">
+				<input id="btn" type="button" value="查看"/ >
+			</form>
+		</div>
+		<div id="save-data">
+			
+		</div>
+	</body>
+</html>
