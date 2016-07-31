@@ -1,3 +1,0 @@
-test git 1
-test git 2:first change.
-test git 3:secend change.
