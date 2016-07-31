@@ -1,3 +1,3 @@
 <?php
-//000000000120a:3:{s:3:"ret";s:3:"200";s:4:"data";a:5:{i:0;a:3:{s:8:"catename";s:6:"绿茶";s:3:"pid";s:1:"7";s:3:"cid";s:2:"31";}i:1;a:3:{s:8:"catename";s:6:"黄茶";s:3:"pid";s:1:"7";s:3:"cid";s:2:"32";}i:2;a:3:{s:8:"catename";s:6:"青茶";s:3:"pid";s:1:"7";s:3:"cid";s:2:"33";}i:3;a:3:{s:8:"catename";s:6:"黑茶";s:3:"pid";s:1:"7";s:3:"cid";s:2:"34";}i:4;a:3:{s:8:"catename";s:6:"红茶";s:3:"pid";s:1:"7";s:3:"cid";s:2:"35";}}s:3:"msg";s:0:"";}
+//000000000120a:3:{s:3:"ret";s:3:"200";s:4:"data";a:2:{s:9:"basicInfo";a:1:{i:0;a:12:{s:2:"id";s:1:"7";s:5:"proid";s:1:"7";s:5:"pname";s:6:"柿子";s:3:"psn";s:0:"";s:4:"pnum";s:4:"2000";s:5:"price";s:4:"7.90";s:6:"pintro";s:1:"0";s:4:"pimg";s:23:"images/Product/7/01.jpg";s:6:"isshow";s:1:"1";s:7:"isexist";s:1:"1";s:3:"cid";s:2:"11";s:8:"username";s:0:"";}}s:6:"detail";a:0:{}}s:3:"msg";s:0:"";}
 ?>

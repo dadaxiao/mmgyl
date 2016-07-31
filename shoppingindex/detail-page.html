@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+  	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>详情页</title>			   
+    <link href="css/bootstrap.min.css" rel="stylesheet" >
+     <link href="css/details-page.css" rel="stylesheet" >
+     <script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>
+    <!--[if (lt IE 9) & (!IEMobile)]> 
+    <script src="js/respond.min.js"></script>
+    <script src="js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+  <script>
+  $(function(){
+//              function getQueryString(proId) { 
+//									var reg = new RegExp("(^|&)" + proId + "=([^&]*)(&|$)", "i"); 
+//									var r = window.location.search.substr(1).match(reg); 
+//									if (r != null) return unescape(r[2]); return null; 
+//									} 
+/*
+ * 获取url的参数 proId
+ */
+function getQueryVariable(proId)
+{
+       var query = window.location.search.substring(1);
+       var vars = query.split("&");
+       for (var i=0;i<vars.length;i++) {
+               var pair = vars[i].split("=");
+               if(pair[0] == proId){return pair[1];}
+       }
+       return(false);
+   }
+      var proId = getQueryVariable("proId") 
+               
+               
+               $.ajax({
+                    contentType:"application/json",
+                    type:"get",
+                    url:"http://localhost/mmgyl/index.php/Home/proshow/proShow",
+                    data:{"proId":proId},
+                    dataType:"json",
+                    cache:"false",
+                    async:true,
+                    success: function(datac){
+//                      alert(datac.data.basicInfo[0].pname);
+//alert("asf");
+                    //如果获取商品信息成功
+                   if(datac.ret==200)
+                   {
+                    document.getElementById("pName").innerHTML=datac.data.basicInfo[0].pname;
+                    document.getElementById("price").innerHTML=datac.data.basicInfo[0].price;
+                    document.getElementById("detailPicurl").src=datac.data.detail[0].picurl;
+                    document.getElementById("pimg").src=datac.data.basicInfo[0].pimg;
+                    }
+                   //如果获取商品信息失败
+                   else{
+                   	alert("获取商品信息失败");
+//                 	window.location.href="#";
+                   }
+                   
+                    },
+                    error: function(datac){
+                        alert("出错啦")
+                    }
+                }); 
+                    
+                    
+                })
+  
+  </script>
+  <body>
+  	<div class="mynavbar">
+    	<div class="mynavbar-txt">         
+            <ul class="navbat-txt-list">
+                <li ><a href="#" target="_parent"> <i class="icon-home "></i> 首页</a>　<b>|</b></li>
+                <li ><a href="" target=""><i class="icon-comment"></i> 消息<img src="images/downward.png" width="11" height="11" ></a></li>
+                <li >　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<a href="" target="">注册</a></li>
+                <li ><a href="" target="">/ 登录</a>　<b>|</b></li></li>
+                <li ><a href="" target=""><img src="images/myorder.png" width="13" height="15"> 我的订单</a>　<b>|</b></li></li>
+                <li ><a href="" target=""><img src="images/star.png" height="18" width="18"> 我的收藏</a>　<b>|</b></li></li>
+                <li ><a href="" target=""><img src="images/shoppingcart-mini.png" alt="购物车" width="21" height="19"> 购物车</a></li>
+            </ul>           
+        </div>
+     </div>
+     <div class="logo-searchbar">
+         <div class="logo-searchbar-content">
+            <div class="logo">
+                <img src="images/logo.png" width="63" height="63">
+            </div>
+            <div class="add-collection">
+            	<a href="#" target="" ><p><i class="icon-heart "></i> 收藏本店</p></a>
+            </div>
+            <div class="customer-service">
+            	<a href="#" target="" ><p> <img src="images/service.gif" height="17" width="16"/> 客服</p></a>
+            </div>
+            <div class="search-bar">
+                <div class="input-buttom">
+                    <input type="text" name="search" placeholder="请输入关键字..." />
+                    
+                    	<a class="search-btn-img" href="#" target="_parent"><div class="btn-img"></div> </a>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ad">
+    	<div class="ad-img">
+        </div>
+    </div>
+    <div class="nav2">
+    	<div class="nav2-content">
+        	<ul class="navbar-txt-list">
+                <li ><a href="#" target="_parent"> <i class="icon-home "></i> 首页</a>　<b>|</b>&nbsp; &nbsp;</li>
+                <li ><a href="" target=""> 全部商品<img src="images/downward.png" width="11" height="11" ></a> &nbsp; &nbsp; <b>|</b>&nbsp; &nbsp; </li>
+                 <li ><a href="#" target="_parent">其他商品分类.....</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="body">
+    	<div class="main-content">
+        	<div class="details">
+            	<div class="details-content">
+                	<div class="details-left1">
+                    	<div class="goods-img1-mini">
+                        	<a href="" ><img src="images/good-img1.png" height="60" height="60"/></a>
+                        </div>
+                        <div class="goods-img2-mini">
+                        	<a href="" ><img src="images/good-img1.png" height="60" height="60"/></a>
+                        </div>
+                        <div class="goods-img3-mini">
+                        	<a href="" ><img src="images/good-img1.png" height="60" height="60"/></a>
+                        </div>
+                        <div class="goods-img4-mini">
+                        	<a href="" ><img src="images/good-img1.png" height="60" height="60"/></a>
+                        </div>
+                        <div class="goods-img5-mini">
+                        	<a href="" ><img src="images/good-img1.png" height="60" height="60"/></a>
+                        </div>
+                        <div class="goods-img6-mini">
+                        	<a href="" ><img src="images/good-img1.png" height="60" height="60"/></a>
+                        </div>
+                    </div>
+                    <div class="details-left2">
+                    	<img id="pimg" src="images/Product/20160723003/01.jpg" height="475" width="370"/>
+                    </div>
+                    <div class="details-center">
+                    	<div class="good-title">
+                        	<p id="pName">新款女包荔枝纹双肩包</p>
+                        </div>
+                        <div class="goods-information">
+                        	<div class="price">
+                                <p>价格：****</p>
+                                <p>促销价：<b id="price">￥89.00</b></p>
+                                <p>店铺优惠：**********</p>
+                            </div>
+                            <div class="count">
+                            	<b>评价：</b> 
+                                <b>累计销量：</b>
+                            </div>
+                        </div>
+                        <div class="shipment">
+                        	<p>配送:*****<b></b>至:****<b></b>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  运费：****</p>
+                        </div>
+                        <div class="customer-service2">
+                        	<p>客服：<a href=""><img src="images/service.gif" height="17" width="16"/>联系客服</a></p>
+                        </div>
+                        <div class="classification">
+                        	<b>分类：</b>
+                        	<ol>
+                            	<li>
+                                	<img src="images/goods-mini.png" height="45" width="45"/ >
+                                </li>
+                                <li>
+                                	<img src="images/goods-mini.png" height="45" width="45"/ >
+                                </li>
+                                <li>
+                                	<img src="images/goods-mini.png" height="45" width="45"/ >
+                                </li>
+                                <li>
+                                	<img src="images/goods-mini.png" height="45" width="45"/ >
+                                </li>
+                                <li>
+                                	<img src="images/goods-mini.png" height="45" width="45"/ >
+                                </li>
+                                <li>
+                                	<img src="images/goods-mini.png" height="45" width="45"/ >
+                                </li>
+                            </ol>
+                        </div>
+                        <div class="number">
+                        	<b>数量：</b>
+                            <div class="number-box">
+                            	<span class="num-muis"></span>
+                                <input class="num-input" type="text" value="1"/>
+                                <span class="num-add"></span>  	
+                            </div>
+                            <dt id="pNumber">库货：****件</dt>
+                        </div>
+                        <div class="buy-box">
+                        	<span class="buy"></span>
+                            <span class="add-spct"></span>
+                        </div>
+                        <div class="collection-goods">
+                        	<a href="#" target="_blank"><span class="collection">收藏宝贝</span></a>（****人已收藏）
+                            <a href="#" target="_blank"><span class="share">分享</span></a>
+                        </div>
+                        <div class="pay-style">
+                        	<p>服务承诺：</p>
+                            <p>支付方式：</p>
+                        </div>
+                    </div>
+                    <div class="details-right">
+                    	<div class="right-title">
+                        	<p>　　<i class="icon-fire"></i>热卖推荐<i class="icon-fire"></i></p>
+                        </div>
+                        <div class="right-good1">
+                        	<div class="right-good1-img">
+                            </div>
+                            <div class="right-good1-txt">
+                            	<em class="price-u">￥</em>
+                                    <span class="price-n"> 
+                                        89.00
+                                    </span>
+                                    <div class="shopping-cart1">
+                                        <a href="#"><img src="images/shoppingcart.png" height="18" width="25"/></a>
+                                    </div>     
+                            </div>
+                        </div>
+                        <div class="right-good2">
+                        	<div class="right-good2-img">
+                            </div>
+                            <div class="right-good1-txt">
+                            	<em class="price-u">￥</em>
+                                    <span class="price-n"> 
+                                        89.00
+                                    </span>
+                                    <div class="shopping-cart1">
+                                        <a href="#"><img src="images/shoppingcart.png" height="18" width="25"/></a>
+                                    </div>  
+                            </div>
+                        </div>
+                        <div class="right-good2">
+                        	<div class="right-good3-img">
+                            </div>
+                            <div class="right-good1-txt">
+                            	<em class="price-u">￥</em>
+                                    <span class="price-n"> 
+                                        89.00
+                                    </span>
+                                    <div class="shopping-cart1">
+                                        <a href="#"><img src="images/shoppingcart.png" height="18" width="25"/></a>
+                                    </div>  
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="goods-detail">
+            	<div class="goods-detail-left">
+                	<div class="shop-ms">
+                    	<p><a href="#"><img src="images/service.gif" height="17" width="16"/> 联系客服</a></p>
+                    </div>
+                    <div class="title-txt">
+                    	<p><i class="icon-eye-open"></i>看了又看</p>
+                    </div>
+                    <div class="similar-products">
+                    	<ul class="repeat-list">
+                        	<li>
+                            	<a href="#"><img src="images/simlar-produts.png" height="240" width="160"/></a>
+                                <a href="#" class="title">XXXXXXXXXXXX</a>
+                                <div class="info">
+                                	<div class="price">
+                                    	<em class="price-u">￥</em>
+                                        	<span class="price-n"> 
+                                            	89.00
+                                            </span>
+                                        <div class="shopping-cart">
+                                        	<a href="#"><img src="images/shoppingcart.png" height="25" width="29"/></a>
+                                    	</div>     
+                                    </div>     
+                                </div>
+                            </li>
+                            <li>
+                            	<a href=""><img src="images/simlar-produts.png" height="240" width="160"/></a>
+                                <a href="#" class="title">XXXXXXXXXXXX</a>
+                                <div class="info">
+                                    <div class="price">
+                                        <em class="price-u">￥</em>
+                                            <span class="price-n">
+                                            	 89.00
+                                            </span>
+                                        <div class="shopping-cart">
+                                            <a href="#"><img src="images/shoppingcart.png" height="25" width="29"/></a>
+                                        </div>     
+                                    </div>     
+                                </div>
+                            </li>
+                            <li>
+                            	<a href="#"><img src="images/simlar-produts.png" height="240" width="160"/></a>
+                                <a href="#" class="title">XXXXXXXXXXXX</a>
+                                <div class="info">
+                                	<div class="price">
+                                    	<em class="price-u">￥</em>
+                                        	<span class="price-n"> 
+                                            	89.00
+                                            </span>
+                                        <div class="shopping-cart">
+                                        	<a href="#"><img src="images/shoppingcart.png" height="25" width="29"/></a>
+                                    	</div>     
+                                    </div>     
+                                </div>
+                            </li>
+                            <li>
+                            	<a href="#"><img src="images/simlar-produts.png" height="240" width="160"/></a>
+                                <a href="#" class="title">XXXXXXXXXXXX</a>
+                                <div class="info">
+                                	<div class="price">
+                                    	<em class="price-u">￥</em>
+                                        	<span class="price-n"> 
+                                            	89.00
+                                            </span>
+                                        <div class="shopping-cart">
+                                        	<a href="#"><img src="images/shoppingcart.png" height="25" width="29"/></a>
+                                    	</div>     
+                                    </div>     
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="goods-detail-center">
+                	<div class="rangking">
+                    	<div class="first">
+                    		<span>商品详情</span>
+                    		
+                   		</div>
+                            <div class="ul-list">
+                                <ul>   
+                                    <li>
+                                        <a href="" target="_parent"><b>累计评价</b></a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_parent"><b>专享服务</i></b></a> 
+                                    </li>
+                                    <li>
+                                        <a href="" target="_parent"><b>本店同类商品</i></b></a>
+                                    </li>
+                                </ul>
+                            </div>
+                    </div>
+                    	<img id="detailPicurl" src="images/Product/aaa/03.jpg" />
+                </div>
+                <div class="goods-detail-right">
+                	<div class="detail-right">
+                    	<p><a href="#" target="_parent">加入购物车</a></p>
+                    </div>
+                    <div class="goods-description">
+                    	<p>商品描述</p>
+                    </div>
+                    <div class="des1">
+                    	<p><a href="">产品参数</a></p>
+                    </div>
+                    <div class="des1">
+                    	<p><a href="">产品细节</a></p>
+                    </div>
+                    <div class="des1">
+                    	<p><a href="">商品实拍</a></p>
+                    </div>
+                </div>
+            </div>
+        </div><!--main-content-->
+    </div><!--body-->
+	<div class="footer">
+        <div class="foot-ali">
+            <a href=""> 关于我们</a>
+            <b>|</b>
+            <a href=""> 联系我们</a>
+            <b>|</b>
+            <a href=""> 商家入驻</a>
+            <b>|</b>
+            <a href=""> 友情链接</a>
+            <b>|</b>
+            <a href=""> 意见反馈</a>
+            <b>|</b>
+            <a href=""> 售后服务</a>
+            <b>|</b>
+            <a href=""> 知识产权</a>
+        </div>
+   </div>
+  </body>
+</html>

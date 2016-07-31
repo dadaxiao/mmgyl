@@ -7,13 +7,13 @@ class UserController extends Controller{
 	 */
 	public function register() {
 		$user = M("user");
-		$data['userName'] = $_GET['userName'];
-		$data['password'] = md5($_GET['password']);
-		$data['sex'] = $_GET['sex'];
-		$data['phone'] = $_GET['phone'];
-		$data['email'] = $_GET['email'];
-		$data['face'] = $_GET['face'];
-		$data['address'] = $_GET['address'];
+		$data['userName'] = $_POST['userName'];
+		$data['password'] = md5($_POST['password']);
+		$data['sex'] = $_POST['sex'];
+		$data['phone'] = $_POST['phone'];
+		$data['email'] = $_POST['email'];
+		$data['face'] = $_POST['face'];
+		$data['address'] = $_POST['address'];
 		try {
 			$result = $user -> add($data);
 		} catch(\Exception $e) {
@@ -24,7 +24,7 @@ class UserController extends Controller{
 			$this -> ajaxReturn($return);
 		}
 		if ($result > 0) {
-			$return["ret"] = "400";
+			$return["ret"] = "200";
 			//注册成功
 			$return["data"] = "注册成功";
 			$return['msg'] = "";
@@ -112,7 +112,7 @@ class UserController extends Controller{
 		}
 		if($result[0]['username'] == $_GET['userName']&&
 		$result[0]['password'] == md5($_GET['password'])){
-		$return["ret"] = "400";
+		$return["ret"] = "200";
 			//注册成功
 			$return["data"] = "用户登录成功";
 			$return['msg'] = "";

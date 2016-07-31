@@ -22,6 +22,7 @@ $(document).ready(function(){
 	});
 	$(".first-list").mouseover(function(){
 		$(this).addClass("active").children("ul").show();
+		
 	});
 	$(".first-list").mouseout(function(){
 		$(this).removeClass("active").children("ul").hide();

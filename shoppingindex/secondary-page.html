@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+  	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>二级分类</title>	
+   
+    <link href="css/bootstrap.min.css" rel="stylesheet" >
+     <link href="css/secondary-page.css" rel="stylesheet" >
+    <script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+		
+    <!--[if (lt IE 9) & (!IEMobile)]> 
+    <script src="js/respond.min.js"></script>
+    <script src="js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+  <script>
+  
+
+			$(function(){
+				
+				/*
+ * 获取url的参数 proId
+ */
+		function getQueryVariable(secondCateId)
+		{
+		       var query = window.location.search.substring(1);
+		       var vars = query.split("&");
+		       for (var i=0;i<vars.length;i++) {
+		               var pair = vars[i].split("=");
+		               if(pair[0] == secondCateId){return pair[1];}
+		       }
+		       return(false);
+		   }
+		      var secondCateId = getQueryVariable("secondCateId") 
+//		      alert(secondCateId);
+				
+				//jquery点击跳转页面
+//				$("#move").click(function(){
+//					location.href="http://www.baidu.com";
+//				});
+//				var num ="荔枝";
+//				var catename=1;
+				$.ajax({
+					contentType:"application/json",
+					type:"get",
+					url:"http://localhost/mmgyl/index.php/Home/proshow/secondCateProList",
+					data:{"secondCateId":secondCateId},
+//                  data:"",
+					dataType:"json",
+					cache:"false",
+					async:true,
+					success: function(datac){
+						
+//						for (var i=0,len=datac.data.length;i<len;i++) {
+//						document.getElementById("p"+i).src=datac.data[i].pimg; 
+//						
+//						}
+						var str = "";
+						var src=	$(".first-row-goods img").attr('src');
+						$(src).html("");
+						$(".showy_info span").eq(1).html("");
+						for (var i=0;i<datac.data.length;i++) {
+							str = datac.data[i].price;
+							$("#price"+i).html(str);
+							str=datac.data[i].pname;
+							$("#sword"+i).html(str);
+							str=datac.data[i].pimg;
+							$("#p"+i).attr("src",str);
+							$("#p"+i).attr("name",datac.data[i].proid);
+						}
+					},
+					error: function(datac){
+						alert("出错啦")
+					}
+				});	
+					
+					
+				})
+//				var std;
+//					$.ajax({
+//					contentType:"application/json",
+//					type:"get",
+//					url:"http://localhost/mmgyl/index.php/Home/proshow/getFirstCate",
+//					data:"",
+//					dataType:"json",
+//					cache:"false",
+//					async:true,
+//					success: function(datac){
+//						var str = "";
+//						
+////						$(".nav-left span").html("");
+//						for (var i=0;i<datac.data.length;i++) {
+//							str = datac.data[i].catename;
+//							$("#first-list"+i).html(str);
+//							std= datac.data[i].cid;
+//							document.getElementById("first-list"+i).title=std;
+////							$(("#second-list"+i).name).html(std);
+////						var aaa=	$(sname+i).html(std);
+////                      var b =document.getElementById("first-list"+i).title;
+////							alert(b);
+//						}
+//						
+//					},
+//					error: function(datac){
+//						alert("出错啦")
+//					}
+//				});	
+//				$.ajax({
+//					contentType:"application/json",
+//					type:"get",
+//					url:"http://localhost/mmgyl/index.php/Home/proshow/makeChoiceForYou",
+//					dataType:"json",
+//					cache:"false",
+//					async:true,
+//					success: function(datac){
+//						var str = "";
+//					var src=	$("#select-for-you li img").attr('src');
+//					$(src).html("");
+//						for (var i=0;i<datac.data.length;i++) {
+//							str = datac.data[i].pimg;
+//							
+//							$("#select-photo"+i).attr("src",str);
+//						}
+//					},
+//					error: function(datac){
+//						alert("出错啦")
+//					}
+//				});	
+function myMove(site){
+				window.location=site;
+			}
+			
+  
+  </script>
+  
+  <script>
+  /*
+   * 跳转到商品详情页面
+   */
+  	function goToDetail(proId){
+//				alert("asfd");
+				window.location.href="http://localhost/mmgyl/shoppingindex/detail-page.html?proId="+proId;
+			}
+  </script>
+  <body>
+  	
+  	<div class="mynavbar">
+    	<div class="mynavbar-txt">         
+            <ul class="navbat-txt-list">
+                <li ><a href="#" target="_parent"><img src="images/home.png" height="18" width="18"/> 首页</a>　<b>|</b></li>
+                <li ><a href="" target=""><img src="images/mail.png" width="16" height="16"/> 消息<img src="images/downward.png" width="11" height="11" ></a></li>
+                <li >　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<a href="" target="">注册</a></li>
+                <li ><a href="" target=""> 登录</a>　<b>|</b></li></li>
+                <li ><a href="" target=""><img src="images/list.png" width="16" height="16"></i> 我的订单</a>　<b>|</b></li></li>
+                <li ><a href="" target=""><img src="images/heart.png" height="16" width="16"> 我的收藏</a>　<b>|</b></li></li>
+                <li ><a href="" target=""><img src="images/shoppingcart-mini.png" alt="购物车" width="21" height="19"> 购物车</a></li>
+            </ul>           
+        </div>
+     </div>
+     <div class="logo-searchbar">
+         <div class="logo-searchbar-content">
+            <div class="logo">
+                <a href="#" target="#"><img src="images/logo.png" width="65" height="63"/></a>
+            </div>
+            <div class="search-bar">
+                <div class="input-buttom">
+                    <input type="text" name="search" placeholder="请输入关键字..." />
+                    <a class="del-keywords" onclick="" href=""><img class="button" src="images/search.png"/></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navbar2">
+    	<div class="navbar2-content">
+            <ul>
+                <li class="all">
+                    <li>
+                        <a href="" target="_parent" ><em>首页</em></a>
+                    </li>
+                    <li>
+                        <a  class="active1" href="" target="_parent"><b>最热</b></a>
+                    </li>
+                    <li>
+                        <a href="" target="_parent"><em>海产</em></a> 
+                    </li>
+                    <li>
+                        <a href="" target="_parent"><em>水果</em></a>
+                    </li>
+									 	<li>
+                        <a href="" target="_parent"><em>化工</em></a>
+                    </li>
+                    <li>
+                       <a href="" target="_parent">更多<i class="icon-chevron-down"></i></a>
+                    </li>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="body">
+    	<div class="main-content">
+        	<div class="table-content">
+                <table  class="table table-striped table-bordered" border="0">
+                    <tr>
+                        <td>品　牌　 :　
+                            <a href="" target="">钱排李</a>
+                            <a href="" target="">朋　柚</a>
+                            <a href="" target="">九峰山</a>
+                            <a href="" target="">城中果村</a>
+                            <div class="button1">	
+                                <b><a class="choose-submit" href=" ">多选</a></b>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>热卖时间 :　
+                            <a href="" target="">7月</a>
+                            <a href="" target="">6月</a>
+                            <a href="" target="">5月</a>
+                            <a href="" target="">8月</a>
+							<a href="" target="">11月</a>
+                            <a href="" target="">5月</a>
+                            <a href="" target="">3月</a>
+                            <div class="button1">
+                               <b><a class="choose-submit" href="">多选</a></b>　      
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>选购热点 :　
+                            <a href="" target="">新鲜</a>
+                            <a href="" target="">爽口</a>
+                            <a href="" target="">时令</a>
+                            <a href="" target="">美味</a>
+                            <div class="button1">
+                                <b><a class="choose-submit" href="" >多选</a></b>  
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>发货方式 :　
+                            <a href="" target="">现摘现发</a>
+                            <a href="" target="">产地直销</a>
+                            <div class="button1">
+                                <b><a class="choose-submit" href="" >多选</a></b>　　  
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>种植方式 :　
+                            <a href="" target="">原生态</a>
+                            <a href="" target="">野生</a>
+                            <a href="" target="">农家自制</a>
+                            <div class="button1">
+                            	<b><a class="choose-submit" href="" >多选</a></b>　　
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="rangking-goods">
+            	<div class="rangking">
+                	<div class="ul-list">
+                        <ul>   
+                            <li>
+                                <a href="" target="_parent" ><span><b>综合<img src="images/arrow_down.png" height="18" width="13"/></b></span></a>
+                            </li>
+                            <li>
+                                <a href="" target="_parent"><b>价格<img src="images/arrow_down.png" height="18" width="13"/></b></a>
+                            </li>
+                            <li>
+                                <a href="" target="_parent"><b>销量<img src="images/arrow_down.png" height="18"  width="13"/></b></a> 
+                            </li>
+                            <li>
+                                <a href="" target="_parent"><b>新品<img src="images/arrow_down.png" height="18"  width="13"/></b></a>
+                            </li>
+                            <li>
+                               <a href="" target="_parent"><b>信用<img src="images/arrow_down.png"  height="18"  width="13"/></b></a>
+                            </li>
+                            <li>
+                                <a href="" target="_parent"><b>人气<img src="images/arrow_down.png" height="18"  width="13"/></b></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="byprice">
+						<input class="start input" type="text" value="" placeholder="¥">
+							<span class="wavemark">~</span>
+						<input class="end input" type="text" value="" placeholder="¥">
+							<a class="p-submit" href="javascript:void(0);">确认</a>
+					</div>	
+                </div>
+                <div class="goods">
+                	<div class="goods-img-txt">
+                        <div class="first-row-goods">
+                            <div class="img">
+                                <a target="_self" href="#"><img id ="p0" name="" onclick="goToDetail(this.name)" height="340" width="225"></a> 
+                            </div>
+                                <div class="desc_box">
+                                    <div class="showy_info">
+                                        <span>￥</span><span id="price0"></span>
+                                            <div class="shoppingcart">
+                                                <a target="_self" href="#"><img src="images/shoppingcart.png" width="29" height="25"></a>
+                                            </div>
+                                    </div>
+                                    <div class="title">
+                                        <p>
+                                            <a  id="title" target="_self" href="#"><span id="sword0">3斤装红心李包邮新鲜酸三华李现摘现发五月李子孕妇水果李子茂名</span> </a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>      
+                        <div class="first-row-goods">
+                            <div class="img">
+                                <a target="_self" href="#"><img id ="p1" name="" onclick="goToDetail(this.name)" src="images/goods/广东茂名特产三华李红心李孕妇水果李子 广东省内四斤包顺丰（￥56.00）.jpg" height="340" width="225"></a>
+                            </div>
+                                <div class="desc_box">
+                                    <div class="showy_info">
+                                        <span>￥</span><span id="price1">59.00</span>
+                                            <div class="shoppingcart">
+                                                <a target="_self" href="#"><img src="images/shoppingcart.png" width="29" height="25"></a>
+                                            </div>
+                                    </div>
+                                    <div class="title">
+                                        <p>
+                                            <a  id="title" target="_self" href="#"><span id="sword1">3斤装红心李包邮新鲜酸三华李现摘现发五月李子孕妇水果李子茂名</span></a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="first-row-goods">
+                            <div class="img">
+                                <a target="_self" href="#"><img id ="p2" name="" onclick="goToDetail(this.name)" src="images/goods/广东茂名信宜钱排特产 三华李 新鲜现发 四斤送一斤 李子（￥124.22).jpg" width="224" height="341"></a>
+                            </div>
+                                <div class="desc_box">
+                                    <div class="showy_info">
+                                        <span>￥</span><span id="price2">59.00</span>  
+                                            <div class="shoppingcart">
+                                                <a target="_self" href="#"><img src="images/shoppingcart.png" width="29" height="25"></a>
+                                            </div>
+                                        </div>
+                                        <div class="title">
+                                            <p>
+                                                <a  id="title" target="_self" href="#"><span id="sword2">3斤装红心李包邮新鲜酸三华李现摘现发五月李子孕妇水果李子茂名</span></a>
+                                            </p>
+                                        </div>
+                                 </div>
+                            </div>
+                        <div class="first-row-goods">
+                            <div class="img">
+                                <a target="_self" href="#"><img    id ="p3" name="" onclick="goToDetail(this.name)" src="images/goods/广东茂名信宜钱排银妃三华李 新鲜水果有机红心李子双华李8斤包邮（￥44.00）.jpg"width="224" height="341"></a>
+                            </div>
+                                <div class="desc_box">
+                                    <div class="showy_info">
+                                        <span>￥</span><span id="price3">59.00</span>
+                                            <div class="shoppingcart">
+                                                <a target="_self" href="#"><img src="images/shoppingcart.png" width="29" height="25"></a>
+                                            </div>
+                                        </div>
+                                        <div class="title">
+                                            <p>
+                                                <a  id="title" target="_self" href="#"><span id="sword3">3斤装红心李包邮新鲜酸三华李现摘现发五月李子孕妇水果李子茂名</span></a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                        <div class="first-row-goods">
+                            <div class="img">
+                                <a target="_self" href="#"><img   id ="p4" name="" onclick="goToDetail(this.name)" src="images/goods/广东茂名信宜钱排银妃三华李 新鲜水果有机红心李子双华李6斤包邮（￥71.00）.jpg" width="224" height="341"></a>
+                            </div>
+                                <div class="desc_box">
+                                    <div class="showy_info">
+                                        <span>￥</span> <span id="price4">59.00</span>
+                                            <div class="shoppingcart">
+                                                <a target="_self" href="#"><img src="images/shoppingcart.png" width="29" height="25"></a>
+                                            </div>
+                                        </div>
+                                        <div class="title">
+                                            <p>
+                                                <a  id="title" target="_self" href="#"><span id="sword4">3斤装红心李包邮新鲜酸三华李现摘现发五月李子孕妇水果李子茂名</span></a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                        	</div>
+                            
+                            
+                            
+                        	<div class="goods-img-txt">
+                                <div class="second-row-goods">
+                                    <div class="img">
+                                        <a target="_self" href="#"><img id ="p5" name="" onclick="goToDetail(this.name)" src="images/goods/广东省茂名市信宜市三华李红心李（￥59.00）.jpg" width="224" height="341"></a> 
+                                    </div>
+                                        <div class="desc_box">
+                                            <div class="showy_info">
+                                                <span>￥</span><span id="price5">59.00</span>
+                                                    <div class="shoppingcart">
+                                                        <a target="_self" href="#"><img src="images/shoppingcart.png" width="29" height="25"></a>
+                                                    </div>
+                                            </div>
+                                            <div class="title">
+                                                <p>
+                                                    <a  id="title" target="_self" href="#"><span id="sword5">3斤装红心李包邮新鲜酸三华李现摘现发五月李子孕妇水果李子茂名</span> </a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>      
+                                <div class="second-row-goods">
+                                    <div class="img">
+                                        <a target="_self" href="#"><img  id ="p6" name="" onclick="goToDetail(this.name)" src="images/goods/广东省茂名信宜市钱排三华李 新鲜水果 银妃红心李 5斤包装包邮（￥60.00）.jpg"width="224" height="341"></a>
+                                    </div>
+                                        <div class="desc_box">
+                                            <div class="showy_info">
+                                                <span>￥</span><span id="price6">59.00</span>
+                                                    <div class="shoppingcart">
+                                                        <a target="_self" href="#"><img src="images/shoppingcart.png" width="29" height="25"></a>
+                                                    </div>
+                                            </div>
+                                            <div class="title">
+                                                <p>
+                                                    <a  id="title" target="_self" href="#"><span id="sword6">3斤装红心李包邮新鲜酸三华李现摘现发五月李子孕妇水果李子茂名</span></a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <div class="second-row-goods">
+                                    <div class="img">
+                                        <a target="_self" href="#"><img id ="p7" name="" onclick="goToDetail(this.name)" src="images/goods/茂名特产新鲜红心三华李 孕妇优选大果酸李子 5斤省内包邮（￥32.00）.jpg" width="224" height="341"></a>
+                                    </div>
+                                        <div class="desc_box">
+                                            <div class="showy_info">
+                                                <span>￥</span><span id="price7">59.00</span>    
+                                                    <div class="shoppingcart">
+                                                        <a target="_self" href="#"><img src="images/shoppingcart.png"  width="29" height="25"></a>
+                                                    </div>
+                                                </div>
+                                                <div class="title">
+                                                    <p>
+                                                        <a  id="title" target="_self" href="#"><span id="sword7">3斤装红心李包邮新鲜酸三华李现摘现发五月李子孕妇水果李子茂名</span></a>
+                                                    </p>
+                                                </div>
+                                         </div>
+                                    </div>
+                                <div class="second-row-goods">
+                                    <div class="img">
+                                        <a target="_self" href="#"><img id ="p8" name="" onclick="goToDetail(this.name)" src="images/goods/茂名特产三华李现摘新鲜钱排正宗银妃三华李酸甜脆爽口大果包邮（￥49.00）.jpg" width="224" height="341"></a>
+                                    </div>
+                                        <div class="desc_box">
+                                            <div class="showy_info">
+                                                <span>￥</span><span id="price8">59.00</span>
+                                                    <div class="shoppingcart">
+                                                        <a target="_self" href="#"><img src="images/shoppingcart.png" width="29" height="25"></a>
+                                                    </div>
+                                                </div>
+                                                <div class="title">
+                                                    <p>
+                                                        <a  id="title" target="_self" href="#"><span id="sword8">3斤装红心李包邮新鲜酸三华李现摘现发五月李子孕妇水果李子茂名</span></a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                <div class="second-row-goods">
+                                    <div class="img">
+                                        <a target="_self" href="#"><img id ="p9" name="" onclick="goToDetail(this.name)" src="images/goods/【大成伟喜】厂家发货 350g蜜饯三华李 茂名信宜特产 开胃零食（￥16.00）.jpg" width="224" height="341"></a>
+                                    </div>
+                                        <div class="desc_box">
+                                            <div class="showy_info">
+                                                <span>￥</span> <span id="price9">59.00</span>
+                                                    <div class="shoppingcart">
+                                                        <a target="_self" href="#"><img src="images/shoppingcart.png" width="29" height="25"></a>
+                                                    </div>
+                                                </div>
+                                                <div class="title">
+                                                    <p>
+                                                        <a  id="title" target="_self" href="#"><span id="sword9">3斤装红心李包邮新鲜酸三华李现摘现发五月李子孕妇水果李子茂名</span></a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+    								</div>
+                                    
+                                    
+                                    
+                                    <div class="goods-img-txt">
+                                        <div class="second-row-goods">
+                                            <div class="img">
+                                                <a target="_self" href="#"><img id ="p10" onclick="goToDetail(this.name)" name="" src="images/goods/茂名信宜钱排银妃三华李红心李新鲜现摘现发李子 大果 礼品水果（￥40.00）.jpg" width="224" height="341"></a> 
+                                            </div>
+                                                <div class="desc_box">
+                                                    <div class="showy_info">
+                                                        <span>￥</span><span id="price10">59.00</span>
+                                                            <div class="shoppingcart">
+                                                                <a target="_self" href="#"><img src="images/shoppingcart.png" width="29" height="25"></a>
+                                                            </div>
+                                                    </div>
+                                                    <div class="title">
+                                                        <p>
+                                                            <a  id="title" target="_self" href="#"><span id="sword10">3斤装红心李包邮新鲜酸三华李现摘现发五月李子孕妇水果李子茂名</span> </a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>      
+                                        <div class="second-row-goods">
+                                            <div class="img">
+                                                <a target="_self" href="#"><img id ="p11" onclick="goToDetail(this.name)" name="" src="images/goods/茂名信宜三华李现场采摘 李花观赏 广东旅游 茂名旅游景点（￥43.00）.jpg" width="224" height="341"></a>
+                                            </div>
+                                                <div class="desc_box">
+                                                    <div class="showy_info">
+                                                        <span>￥</span><span id="price11">59.00</span>
+                                                            <div class="shoppingcart">
+                                                                <a target="_self" href="#"><img src="images/shoppingcart.png" width="29" height="25"></a>
+                                                            </div>
+                                                    </div>
+                                                    <div class="title">
+                                                        <p>
+                                                            <a  id="title" target="_self" href="#"><span id="sword11">3斤装红心李包邮新鲜酸三华李现摘现发五月李子孕妇水果李子茂名</span></a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        <div class="second-row-goods">
+                                            <div class="img">
+                                                <a target="_self" href="#"><img id ="p12" onclick="goToDetail(this.name)" name="" src="images/goods/茂名信宜特产银妃三华李（￥38.00）.jpg" width="224" height="341"></a>
+                                            </div>
+                                                <div class="desc_box">
+                                                    <div class="showy_info">
+                                                        <span>￥</span><span id="price12">59.00</span>   
+                                                            <div class="shoppingcart">
+                                                                <a target="_self" href="#"><img src="images/shoppingcart.png" width="29" height="25"></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="title">
+                                                            <p>
+                                                                <a  id="title" target="_self" href="#"><span id="sword12">3斤装红心李包邮新鲜酸三华李现摘现发五月李子孕妇水果李子茂名</span></a>
+                                                            </p>
+                                                        </div>
+                                                 </div>
+                                            </div>
+                                        <div class="second-row-goods">
+                                            <div class="img">
+                                                <a target="_self" href="#"><img id ="p13" onclick="goToDetail(this.name)" name="" src="images/goods/茂名一骑特产 信宜特产 鲜甜 美味前排三华李（5斤装）（￥35.00）.jpg" width="224" height="341"></a>
+                                            </div>
+                                                <div class="desc_box">
+                                                    <div class="showy_info">
+                                                        <span>￥</span><span id="price13">59.00</span>
+                                                            <div class="shoppingcart">
+                                                                <a target="_self" href="#"><img src="images/shoppingcart.png" width="29" height="25"></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="title">
+                                                            <p>
+                                                                <a  id="title" target="_self" href="#"><span id="sword13">3斤装红心李包邮新鲜酸三华李现摘现发五月李子孕妇水果李子茂名</span></a>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                        <div class="second-row-goods">
+                                            <div class="img">
+                                                <a target="_self" href="#"><img id ="p14" onclick="goToDetail(this.name)" name="" src="images/goods/水果茂名信宜钱排三华李秘制冰糖红醋辣椒盐粉全国包邮加盟代理（￥46.00）.jpg" width="224" height="341"></a>
+                                            </div>
+                                                <div class="desc_box">
+                                                    <div class="showy_info">
+                                                        <span>￥</span> <span id="price14">59.00</span>
+                                                            <div class="shoppingcart">
+                                                                <a target="_self" href="#"><img src="images/shoppingcart.png" width="29" height="25"></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="title">
+                                                            <p>
+                                                                <a  id="title" target="_self" href="#"><span id="sword14">3斤装红心李包邮新鲜酸三华李现摘现发五月李子孕妇水果李子茂名</span></a>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+    									</div>
+                                        <div class="goods-img-txt">
+                                            <div class="second-row-goods">
+                                                <div class="img">
+                                                    <a target="_self" href="#"><img id ="p15" onclick="goToDetail(this.name)" name="" src="images/goods/优质三华李顺丰包邮广东省内 正宗茂名信宜钱排特产新鲜李子5斤（￥81.00）.jpg" width="224" height="341"></a> 
+                                                </div>
+                                                    <div class="desc_box">
+                                                        <div class="showy_info">
+                                                            <span>￥</span><span id="price15">59.00</span>
+                                                                <div class="shoppingcart">
+                                                                    <a target="_self" href="#"><img src="images/shoppingcart.png" width="29" height="25"></a>
+                                                                </div>
+                                                        </div>
+                                                        <div class="title">
+                                                            <p>
+                                                                <a  id="title" target="_self" href="#"><span id="sword15">3斤装红心李包邮新鲜酸三华李现摘现发五月李子孕妇水果李子茂名</span> </a>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>      
+                                            <div class="second-row-goods">
+                                                <div class="img">
+                                                    <a target="_self" href="#"><img id ="p16" name="" onclick="goToDetail(this.name)" src="images/goods/正宗茂名信宜三华李新鲜李子红心李 红肉酸脆钱排果5斤装包邮（￥23.00）.jpg" width="224" height="341"></a>
+                                                </div>
+                                                    <div class="desc_box">
+                                                        <div class="showy_info">
+                                                            <span>￥</span><span id="price16">59.00</span>
+                                                                <div class="shoppingcart">
+                                                                    <a target="_self" href="#"><img src="images/shoppingcart.png" width="29" height="25"></a>
+                                                                </div>
+                                                        </div>
+                                                        <div class="title">
+                                                            <p>
+                                                                <a  id="title" target="_self" href="#"><span id="sword16">3斤装红心李包邮新鲜酸三华李现摘现发五月李子孕妇水果李子茂名</span></a>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            <div class="second-row-goods">
+                                                <div class="img">
+                                                    <a target="_self" href="#"><img id ="p17" onclick="goToDetail(this.name)" name="" src="images/goods/新鲜李子孕妇水果银妃三华李红心李子茂名信宜钱排特产中大果5斤（￥89.00）.jpg" width="224" height="341"></a>
+                                                </div>
+                                                    <div class="desc_box">
+                                                        <div class="showy_info">
+                                                            <span>￥</span><span id="price17">59.00</span>    
+                                                                <div class="shoppingcart">
+                                                                    <a target="_self" href="#"><img src="images/shoppingcart.png" width="29" height="25"></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="title">
+                                                                <p>
+                                                                    <a  id="title" target="_self" href="#"><span id="sword17">3斤装红心李包邮新鲜酸三华李现摘现发五月李子孕妇水果李子茂名</span></a>
+                                                                </p>
+                                                            </div>
+                                                     </div>
+                                                </div>
+                                            <div class="second-row-goods">
+                                                <div class="img">
+                                                    <a target="_self" href="#"><img id ="p18" name="" onclick="goToDetail(this.name)" src="images/goods/东茂名特产三华李红心李孕妇水果李子开胃李子省内两斤起包邮（￥65.00）.jpg" width="224" height="341"></a>
+                                                </div>
+                                                    <div class="desc_box">
+                                                        <div class="showy_info">
+                                                            <span>￥</span><span id="price18">59.00</span>
+                                                                <div class="shoppingcart">
+                                                                    <a target="_self" href="#"><img src="images/shoppingcart.png" width="29" height="25"></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="title">
+                                                                <p>
+                                                                    <a  id="title" target="_self" href="#"><span id="sword18">3斤装红心李包邮新鲜酸三华李现摘现发五月李子孕妇水果李子茂名</span></a>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                            <div class="second-row-goods">
+                                                <div class="img">
+                                                    <a target="_self" href="#"><img id ="p19" name="" onclick="goToDetail(this.name)" src="images/goods/茂名信宜地方特色有机水果三华李预售订购保证新鲜、三斤以上包邮(￥66.00）.jpg" width="224" height="341"></a>
+                                                </div>
+                                                    <div class="desc_box">
+                                                        <div class="showy_info">
+                                                            <span>￥</span> <span id="price19">59.00</span>
+                                                                <div class="shoppingcart">
+                                                                    <a target="_self" href="#"><img src="images/shoppingcart.png" width="29" height="25"></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="title">
+                                                                <p>
+                                                                    <a  id="title" target="_self" href="#"><span id="sword19">3斤装红心李包邮新鲜酸三华李现摘现发五月李子孕妇水果李子茂名</span></a>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+    										</div>
+                	</div><!--goods-->
+            	</div><!--ranking-goods-->
+            	<div class="pagination">
+                    <div class="pagination-page">
+                    <a class="page-last" href="#" target="_parent">上一页</a>
+                    <span class="page-cur">1</span>
+                    <a class="page" href="#" target="_parent">2</a>
+                    <a class="page" href="#" target="_parent">3</a>
+                    <span class="page-split">...</span>
+                    <a class="page-next" href="#" target="_parent">下一页</a>
+                    <span class="totalpages">　　共100页　</span>
+                    <span class="totalpages">去第</span>
+                    <a class="pagejump" href="#">
+                        <input id="Jumper" type="text" name="page" value="1">
+                    </a>
+                    <span class="page-word">页　</span>
+                    <a class="pageConfirm" href="#" target="_parent">确定</a>
+                    </div>
+                </div>
+            </div>
+    	</div><!--main content-->
+    </div><!--body-->
+    <div class="footer">
+        <div class="foot-ali">
+            <a href=""> 关于我们</a>
+            <b>|</b>
+            <a href=""> 联系我们</a>
+            <b>|</b>
+            <a href=""> 商家入驻</a>
+            <b>|</b>
+            <a href=""> 友情链接</a>
+            <b>|</b>
+            <a href=""> 意见反馈</a>
+            <b>|</b>
+            <a href=""> 售后服务</a>
+            <b>|</b>
+            <a href=""> 知识产权</a>
+        </div>
+   </div>
+   <script src="../shopping-cart(7.28)/js/bootstrap.min.js"></script>
+   <script src="../shopping-cart(7.28)/js/jquery-3.0.0.min.js"</script>
+  </body>
+</html>

@@ -12,7 +12,7 @@
 		border: 1px solid #ccc;
 	}	
 	</style>
-	
+	  
 	<script>
 //		var obj = JSON.parse(data);
 		$(function(){
@@ -45,25 +45,27 @@
                */
               
 
-         
-
+         // var pname=	$("p").attr("name");
+         // alert(pname);
 
              /*
             //data[0],[1]的价格  ++++++++++++++++++++++++
             //http://localhost/mmgyl/index.php/Home/proshow/getFirstCate
 			for (var i=0;i<datac.data.length;i++) {
 				
-				alert(datac.data[i].catename);
+				alert(datac.data[i].catename); 
 			}
 			*/
 		
 				for (var i=0,len=datac.data.length;i<len;i++) {
 
                     document.getElementById("p"+i).innerHTML=datac.data[i].proid; 
-
+                    document.getElementById("p"+i).innerHTML=datac.data[i].proid; 
+                    document.getElementById("p"+i).name=datac.data[0].pimg; 
+                    alert(document.getElementById("p"+i).name);
+                    
                 }
  
-
 
 
 
@@ -76,10 +78,20 @@
 			});
 		})
 	</script>
+	<script>
+	/*
+	 * 获取当前标签的值并打印
+	 */
+       function aaa(value)
+       {
+       	alert(value);
+       }
+ 
+	</script>
 	<body>
-	        <p id="p0"></p>
-			<p id="p1"></p>
-			<p id="p2"></p>
+	        <p id="p0" name="gdgdgd"></p>
+			<p id="p1" name="faf"></p>
+			<p id="p2" name="fafa"></p>
 	<p id="txtHint1">asdfa</p>
 	<img id="img1" src="" >
 		<div id="test">
@@ -90,5 +102,7 @@
 		<div id="save-data">
 			
 		</div>
+		<!--<input type="button" name="sdf" value="afsdafsd" />--> 
+		<span id="pp" name="sss" title="fads" onclick="aaa(this.title)" >aaaaaaaaaaaaaaaaaa</span>
 	</body>
 </html>

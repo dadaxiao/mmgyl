@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>个人注册</title>
+<link href="CSS/register.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>
+</head>
+
+
+<script>
+
+ /*function subset(){
+    	var width=window.screen.width;
+        var pixel=(width-1000)/2;
+        var oLogo = document.getElementById("logo");
+        oLogo.style.position="absolute";
+        oLogo.style.left=pixel+"px";
+        oLogo.style.top=document.body.clientHeight-520+"px";
+ }*/
+                 function _register()
+				{
+				var email =	document.getElementById("email").value;
+				var password = document.getElementById("password").value;
+				var confirmPassword = document.getElementById("confirmPassword").value;
+				//两次密码输入不一致
+				if(password != confirmPassword)
+				{
+					alert("两次密码输入不一致")
+				}
+				//两次密码输入一致
+				else{
+				$.ajax({
+					contentType:"application/json",
+					type:"POST",
+					url:"http://localhost/mmgyl/index.php/Home/User/register",
+					data:{"email":email,"password":password},
+					dataType:"json",
+					cache:"false",
+					async:true,
+					success: function(datac){
+						var ret = datac.ret;
+						//注册成功
+					    if(ret == 200)
+					    {
+					    	location.href="http://localhost/mmgyl/shoppingindex/index.html";
+					    	//跳转到哪?session?显示用户登录>
+					    }
+					   // 注册失败
+					    else{
+					    	alert(datac.msg);
+					    	location.href="#";
+					    }
+					},
+					error: function(datac){
+						alert("出错啦")
+					}
+				});	
+		
+	   }
+	  					
+	}
+
+
+</script>
+
+<body >
+<!--logo-->
+<div class="w">
+	<div id="logo">
+    	<a href="#"><img  src="images/logo2.png" alt="###" width="274" height="60"/></a><b></b>
+    </div>
+</div>
+
+<div class="content">
+	<!--登录表单-->
+	<div class="login_warp">
+    	<div class="w">
+        	<div class="login_form">
+            	<div class="login_box">
+                	<div class="mt">
+                    	<h2>用户注册</h2>
+                        <div class="extra_r">
+                        	<div class="regist_link">
+                            	<b>已有账号>></b><a target="_blank" href="#" >在线登录</a>
+                            </div>
+                        </div>
+                    </div>
+                 	<div class="mc">
+                    	<div id="form">
+                        	<form id="loginform" method="post">
+                            	<div class="item item-forel">
+                                    <input  id="email" class="itxt" type="text" placeholder="邮　　箱" autocomplete="off" tabindex="1" name="loginname"/>
+                                </div>
+                                <div id="entry" class="item item-fore2">
+                                	 <input  id="password" class="itxt itxt-error" type="password" placeholder="设置密码" autocomplete="off" tabindex="2" name="loginpwd"/>
+                                </div>
+                                 <div id="entry" class="item item-fore2-2">
+                                	 <input  id="confirmPassword" class="itxt itxt-error" type="password" placeholder="确认密码" autocomplete="off" tabindex="2" name="loginpwd"/>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="item item-fore3">
+                    	<form class="checked">
+                        	<span class="checked-1">
+                       			<input class="" type="radio" checked="checked" name="user"  value="e-commerce"><b>电　商</b>
+                            </span>
+                            <span class="checked-2">
+                            	<input class=""type="radio" checked="checked" name="user"  value="privoder">供应商
+                             </span>
+                        </form>
+                    </div>
+                    <div class="item item-fore4">
+                    	<div class="login-btn">
+                        	<a id="loginsubmit" class="" href="#"><img  id = "register" onclick = "_register()" src="images/register_bg.png" onmouseover="this.src='images/register_bg2.png'" onmouseout="this.src='images/register_bg.png'"id="register"  style="height:49px;width:315px;border-radius:6px;"/></a>
+                        </div>
+                    </div>
+                    <div class="line">
+                    	<hr/>
+                    </div>
+                    <div class="item item-fore5">
+                   		<div class="clause">
+                        	<span>
+                            	<input id="agree-clause" class="agree-clause" type="checkbox" />
+                                <label for="">我已同意并接受</label><a id="" class="" target="_blank" href="#">《XXX服务条款》</a>
+                            </span>
+                        </div>
+                  	</div>
+                </div>
+            </div>
+        </div>
+        <div class="login-banner" style="background:#8FDCD1">
+        	<div class="w">
+            	<div id="banner-bg" class="i-inner" style="background:url(images/bg-p.jpg) 0px 0px no-repeat ;"</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+        <div class="foot-ali">
+            <a href=""> 关于我们</a>
+            <b>|</b>
+            <a href=""> 联系我们</a>
+            <b>|</b>
+            <a href=""> 商家入驻</a>
+            <b>|</b>
+            <a href=""> 友情链接</a>
+            <b>|</b>
+            <a href=""> 意见反馈</a>
+            <b>|</b>
+            <a href=""> 售后服务</a>
+            <b>|</b>
+            <a href=""> 知识产权</a>
+        </div>
+   </div>
+</body>
+</html>

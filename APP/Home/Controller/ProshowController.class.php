@@ -143,14 +143,16 @@ class ProshowController extends Controller {
 		*/ 
 	    public function proShow(){
     	$pro = M("pro");
+    	$pro_picture = M('pro_picture');
 		$where['proId'] = $_GET['proId'];
 		$proId = $_GET['proId'];  //缓存下标
 		$cacheIndex = "$proId";
 		$cache=S("$cacheIndex");
 		if($cache==NULL){    
-		$data = $pro -> where($where) -> select();
+		$data['basicInfo'] = $pro -> where($where) -> select();
+        $data['detail'] = $pro_picture -> field('picUrl') -> where($where) -> select();
         //没有缓存数据
-		if ($data != NULL) {
+		if ($data['basicInfo'] != NULL) {
 			$return['ret'] = "200";
 			$return['data'] = $data;
 			$return['msg'] = "";
@@ -194,7 +196,7 @@ class ProshowController extends Controller {
 		if($cache==NULL){   
 		try
 		{
-		$result = $pro -> $data = $pro -> field('proId,pname,price,pimg') -> where('cId='.$cId) ->select();
+		$result = $pro -> $data = $pro -> field('proId,pname,price,pimg') -> where('cId='.$cId) ->limit(0,20) ->select();
 		}
 		catch(\Exception $e)
 		 {
@@ -415,61 +417,69 @@ public function getSecondCate()
 	 public function makeChoiceForYou()
 	 {
     	$pro = M("pro");
-	    $data['basicInfo'] = $pro -> field('pImg,proId') ->limit(0,4) -> select();
-			  if ($data['basicInfo'] != NULL) 
+	    $result = $pro -> field('pImg,proId') ->limit(0,5) -> select();
+			  if ($result != NULL) 
 			  {
-				$return['ret'] = "1";
-				$return['data'] = $data;
+				$return['ret'] = "200";
+				$return['data'] = $result;
+				$return["msg"] = "";
 				$this -> ajaxReturn($return);
 			  }
 		//获取失败
 		    else {
-			   $return["ret"] = "0";
+			   $return["ret"] = "400";
+               $return['data'] = "暂无相关商品";
+               $return["msg"] = "";
 			   $this -> ajaxReturn($return);
 		       }
 		}
 
 
-
-
-		/*
-		*测试缓存
-		*/
-     
-   public function cache(){       
-       //如果有缓存，则读取缓存数据       
-       //如果没有缓存，则读取数据库当中的数据放入缓存       
-       $firstCateId = $_GET['firstCateId'];
-       // $lists = "$lists";
-       $listsIndex = "$firstCateId";
-       var_dump($lists);
-           
-               $lists=S("$listsIndex");
-       if($lists==NULL){                           
-        $cate = M("cate");
-		
-	
-		$data = $cate -> field('cateName,pid,cId') -> where('pid='.$firstCateId) ->select();
-         S("$listsIndex",$data,5);   
-         echo '这是直接读取数据库的数据';  
-         dump($data);     
-          }
-          else{
-          	 dump($lists);
-          }   
-      
-       } 
-
       /*
-       * 首页的某个类别对应的5张图片，价格，名字，iproId
+       *首页水果类的五个商品,proId从10到14，
+       *(可改为通过传入应的一级分类id找出对应的20个商品)
        */
       public function getCateList()
       {
     	$pro = M("pro");
-          
+    	$cate = M("cate");
+//  	$cache = S("cache");
+//		if($cache==NULL){  
+    	$cId = $cate -> field('cId') -> where('pid=1') -> select();
+        
+    	$map[0]=(int)($cId[0]['cid']);
+    	// var_dump($map0);
+        $map[1]=(int)($cId[1]['cid']);
+        $map[2]=(int)($cId[2]['cid']);
+        $map[3]=(int)($cId[3]['cid']);
+        $map[4]=(int)($cId[4]['cid']);
+        $where['cId'] = array('IN',$map);
+    	$result = $pro -> field('proId,pimg,pName,price') -> where($where) -> limit(6,5) -> select();
+	    if ($result != NULL) {
 
-      }
-
+			$return["ret"] = "200";
+			$return["data"] = $result;
+			$return["msg"] = "";
+//			S("cache",$return,5); //写入缓存，时间120s  
+			$this -> ajaxReturn($return);
+		} 
+		else 
+		{
+			$return["ret"] = "400";
+			//注册失败
+			$return["data"] = "此分类暂无商品";
+			$return["msg"] = "";
+//			S("cache",$return,120); //写入缓存，时间120s  
+			$this -> ajaxReturn($return);
+		}
+	  }
+	  //有缓存
+//	   else
+//		 {
+//		   $this -> ajaxReturn($cache);
+//		 } 
+	
+//	 }
 
 
 }

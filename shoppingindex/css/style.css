@@ -8,18 +8,21 @@ a,li{
 	list-style: none;
 }
 .container-fluid{
-	min-width:1920px;
+	width: auto;
+	min-width: 1256px;
 	height: 40px;
 	line-height: 40px;
 	background-color: #333333;	
+	/*margin: 0 auto;*/
 	
 }
 .heading{
-	width: 1226px;
+	width: 1226px ;
 	height: 40px;
 	margin: 0 auto;
-	/*background: #1B6D85;*/
+	
 }
+
 .heading-nav{
 	width: auto;
 	height: 40px;
@@ -102,11 +105,13 @@ a,li{
 	height: 80px;
 	line-height: 80px;
 	text-align: left;
+	margin-left: -15px;
 }
 .nav-top{
 	width: auto;
 	height: 80px;
 	line-height: 80px;
+	
 }
 .nav-top ul{
 	width:auto;
@@ -140,6 +145,7 @@ a,li{
 	font-size: 14px;
 	margin: 18px auto;
 	float: right;
+	margin-right:-15px ;
 	/*position: relative;*/
 }
 input:first-child{
@@ -173,11 +179,14 @@ input:last-child{
 	font-size: 16px;
 	
 }
+/*.col-md-12{
+	background: teal;
+}*/
 .nav-left{
 	/*width: 200px;
 	height: 440px;*/
 	
-	
+	margin:auto -15px;
 	position:relative;
 	
 }
@@ -245,6 +254,7 @@ input:last-child{
 	/*position: absolute;
 	left: 0;
 	top: -450px;*/
+	margin-left:-15px ;
 	margin-top: -450px;
 	width: 1226px;
 	height: 440px;
@@ -358,7 +368,7 @@ input:last-child{
 	top: 32px;
 	cursor: pointer;
 }
-#goods-price{
+.goods-price{
 	margin-top: -15px;
 	color: red;
 	font-size: 16px;

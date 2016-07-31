@@ -15,36 +15,295 @@
 			$("body").css("width", $(window).width()); 
 		</script>-->
 		<script>
+//		if(Window.aaa!=0)
+//		{
+			
+//		}		
+        var aaa=0;
+        function set(value)
+        {
+        	
+        	aaa=value;
+        	console.log("set:"+aaa);
+        }
+        function get()
+        {
+        	console.log("get:"+aaa);
+        	return aaa;
+        }
 			$(function(){
-				$("#move").click(function(){
-					location.href="http://127.0.0.1/bootstrap-3.3.5-dist/zhuye.html";
-				});
-				var num =2016;
+				
+				//jquery点击跳转页面
+//				$("#second-list0").click(function(){
+//					location.href="http://localhost/mmgyl/shoppingindex/secondary%20-page.html";
+//				});
+//				$("#a17").click(function(){
+//					location.href="http://localhost/mmgyl/shoppingindex/secondary%20-page17.html";
+//				});
+//				$("#a21").click(function(){
+//					location.href="http://localhost/mmgyl/shoppingindex/secondary%20-page21.html";
+//				});
+//				$("#a24").click(function(){
+//					location.href="http://localhost/mmgyl/shoppingindex/secondary%20-page24.html";
+//				});
+//				$("#a27").click(function(){
+//					location.href="http://localhost/mmgyl/shoppingindex/secondary%20-page27.html";
+//				});
+//				$("#a32").click(function(){
+//					location.href="http://localhost/mmgyl/shoppingindex/secondary%20-page32.html";
+//				});
+//				$("#a36").click(function(){
+//					location.href="http://localhost/mmgyl/shoppingindex/secondary%20-page36.html";
+//				});
+//				$("#a41").click(function(){
+//					location.href="http://localhost/mmgyl/shoppingindex/secondary%20-page41.html";
+//				});
+//				$("#select-photo0").click(function(){
+//					location.href="http://localhost/mmgyl/shoppingindex/detail-page35.html";
+//				});
+//				$("#select-photo1").click(function(){
+//					location.href="http://localhost/mmgyl/shoppingindex/detail-page31.html";
+//				});
+//				$("#select-photo2").click(function(){
+//					location.href="http://localhost/mmgyl/shoppingindex/detail-page.html";
+//				});
+//				$("#select-photo3").click(function(){
+//					location.href="http://localhost/mmgyl/shoppingindex/detail-page16.html";
+//				});
+//				$("#select-photo4").click(function(){
+//					location.href="http://localhost/mmgyl/shoppingindex/detail-page10.html";
+//				});
+//				$("#plant0").click(function(){
+//					location.href="http://localhost/mmgyl/shoppingindex/detail-page25.html";
+//				});
+//				$("#plant1").click(function(){
+//					location.href="http://localhost/mmgyl/shoppingindex/detail-page31.html";
+//				});
+//				$("#plant2").click(function(){
+//					location.href="http://localhost/mmgyl/shoppingindex/detail-page35.html";
+//				});
+//				$("#plant3").click(function(){
+//					location.href="http://localhost/mmgyl/shoppingindex/detail-page38.html";
+//				});
+//				$("#plant4").click(function(){
+//					location.href="http://localhost/mmgyl/shoppingindex/detail-page55.html";
+//				});
+//				var num ="荔枝";
+//				var catename=1;
 				$.ajax({
 					contentType:"application/json",
 					type:"get",
-					url:"http://localhost/mmgyl/index.php/Home/proshow/proSearch",
-					data:"searchtext"&num,
+					url:"http://localhost/mmgyl/index.php/Home/proshow/getCateList",
+//					data:{"searchtext":num},
+                    data:"",
+					dataType:"json",
 					cache:"false",
 					async:true,
 					success: function(datac){
 						var str = "";
+						var src=	$("#select-for-you li img").attr('src');
+						$(src).html("");
 						$(".goods-price i").html("");
 						for (var i=0;i<datac.data.length;i++) {
 							str = datac.data[i].price;
 							$("#price"+i).html(str);
+							str=datac.data[i].pname;
+							$("#description"+i).html(str);
+							str=datac.data[i].pimg;
+							$("#plant"+i).attr("src",str);
+							document.getElementById("plant"+i).name=datac.data[i].proid;
 						}
 					},
 					error: function(datac){
 						alert("出错啦")
 					}
 				});	
+				var std;
+					$.ajax({
+					contentType:"application/json",
+					type:"get",
+					url:"http://localhost/mmgyl/index.php/Home/proshow/getFirstCate",
+					data:"",
+					dataType:"json",
+					cache:"false",
+					async:true,
+					success: function(datac){
+						var str = "";
+						
+//						$(".nav-left span").html("");
+						for (var i=0;i<datac.data.length;i++) {
+							str = datac.data[i].catename;
+							$("#first-list"+i).html(str);
+							std= datac.data[i].cid;
+							document.getElementById("first-list"+i).title=std;
+//							$(("#second-list"+i).name).html(std);
+//						var aaa=	$(sname+i).html(std);
+//                      var b =document.getElementById("first-list"+i).title;
+//							alert(b);
+						}
+						
+					},
+					error: function(datac){
+						alert("出错啦")
+					}
+				});	
+				$.ajax({
+					contentType:"application/json",
+					type:"get",
+					url:"http://localhost/mmgyl/index.php/Home/proshow/makeChoiceForYou",
+					dataType:"json",
+					cache:"false",
+					async:true,
+					success: function(datac){
+						var str = "";
+					var src=	$("#select-for-you li img").attr('src');
+					$(src).html("");
+						for (var i=0;i<datac.data.length;i++) {
+							str = datac.data[i].pimg;
+							
+							$("#select-photo"+i).attr("src",str);
+							document.getElementById("select-photo"+i).name=datac.data[i].proid;
+							
+						}
+					},
+					error: function(datac){
+						alert("出错啦")
+					}
+				});	
+//				var secondNum={};
+//				for (var i =0;i<datac.data.length;i++) {
+//					secondNum[i]=datac.data[i].cid;
+////				}
+		
+				//***************************************************
+//				$(".nav-left ul li span").hover(function(){
+//				
+//					aaa=$(this).attr("title");
+////			console.log(aaa);
+////			alert(aaa);
+//			$.ajax({
+//					contentType:"application/json",
+//					type:"get",
+//					url:"http://localhost/mmgyl/index.php/Home/proshow/getSecondCate",
+//					data:{"firstCateId":aaa},
+//					dataType:"json",
+//					cache:"false",
+//					async:true,
+//					success: function(datac){
+////						alert(datac.toString());
+//console.log("asd"+get());
+//aaa=1;
+//						var str = "";
+//						var std;
+//						var sname=$(".children-list li span").attr("name");
+//						$(".children-list li span").html("");
+//						for (var i=0;i<datac.data.length;i++) {
+//							str = datac.data[i].catename;
+//							
+////							alert(std);
+//							$("#second-list"+i).html(str);
+////							$("<span id="'second-list'+i">fakjhfak</span>").appendTo("#children-list li a");
+//						document.getElementById("second-list"+i).name=std;
+//////							$(("#second-list"+i).name).html(std);
+//////						var aaa=	$(sname+i).html(std);
+////                      var b =document.getElementById("second-list"+i).name;
+////							alert(b);
+//						}
+//					},
+//					error: function(datac){
+//						alert("出错啦")
+//					}
+//			});
+////				alert(JSON.stringify(aaa));
+//				})
+//				alert(window.aaa);
+
+
+//$("#first-list0").mouseover(function(){
+//					var aaa;
+////					aaa=$(this).val("title");
+//				aaa =	document.getElementById("first-list0").getAttribute("title");
+//				
+////			console.log(aaa)
+//				alert(aaa);
+//				})
+//				$(".first-list").mouseover(function(){
+//		                 var aaa=$(this).attr("title");
+//		                 alert(aaa);
+//	             });
+//				var secondNum =$("#first-list");
+//				$.ajax({
+//					contentType:"application/json",
+//					type:"get",
+//					url:"http://localhost/mmgyl/index.php/Home/proshow/getSecondCate",
+//					data:{"firstCateId":1},
+//					dataType:"json",
+//					cache:"false",
+//					async:true,
+//					success: function(datac){
+////						alert(datac.toString());
+//console.log("asd"+get());
+//aaa=1;
+//						var str = "";
+//						var std;
+//						var sname=$(".children-list li span").attr("name");
+//						$(".children-list li span").html("");
+//						for (var i=0;i<datac.data.length;i++) {
+//							str = datac.data[i].catename;
+//							$()
+////							alert(std);
+////							$("#second-list"+i).html(str);
+////						document.getElementById("second-list"+i).name=std;
+//////							$(("#second-list"+i).name).html(std);
+//////						var aaa=	$(sname+i).html(std);
+////                      var b =document.getElementById("second-list"+i).name;
+////							alert(b);
+//						}
+//					},
+//					error: function(datac){
+//						alert("出错啦")
+//					}
+//				});	//******************************************************
+//				$("<div>jfajfafj</div>").appendTo("#aLi");
 			})
+		//	网页跳转函数
+//		$("#plant0").click(function(){
+////			$("#a17").click(function(){
+//					location.href="http://localhost/mmgyl/shoppingindex/secondary%20-page17.html";
+//				});
 			function myMove(site){
 				window.location=site;
 			}
+			
 		
 		</script>
+		<script>
+//			var testEle = document.getElementById("first-list1");   	
+// var as = testEle.getAttribute("id");  
+// alert(as);
+/*
+ * 跳转到商品详情
+ */
+         function aaa(proId){
+//				alert("asfd");
+				location.href="http://localhost/mmgyl/shoppingindex/detail-page.html?proId="+proId;
+			}
+         
+    /*
+     * 跳转到二级分类页面
+     */
+          function secondCateProList(secondCateId){
+//				alert("asfd");
+				location.href="http://localhost/mmgyl/shoppingindex/secondary-page.html?secondCateId="+secondCateId;
+			}
+         
+//     $("#plant0").click(function(){
+////			$("#a17").click(function(){
+//					location.href="http://localhost/mmgyl/shoppingindex/secondary%20-page17.html";
+//				});
+
+//		</script>
+
 	</head>
 	<body>
 		<div class="container-fluid">
@@ -74,13 +333,13 @@
 				<div class="row">
 					<div class="col-md-2 col-xs-2">
 						<div class="logo">
-						<a href="#"><img src="images/图标/logo.png" alt="logo"/></a>	
+						<a href="#"><img src="images/图标/logo2.png" alt="logo"/></a>	
 						</div>
 					</div>
 					<div class="col-md-6 col-xs-6">
 						<div class="nav-top">
 							<ul>
-								<li><a href="javascript: myMove('http://127.0.0.1:8020/bootstrap-3.3.5-dist/zhuye.html');">特色茂名</a></li>
+								<li><a href="javascript:;">特色茂名</a></li>
 								<li><a href="#">发现好物</a></li>
 								<li><a href="#">推荐最多</a></li>
 								<li><a href="#">疯狂吃货</a></li>
@@ -99,96 +358,98 @@
 					<div class="col-md-12 col-xs-12">
 						<div class="nav-left">
 							<ul>
-								<li class="first-list"><a href="javascript:;"><span>蔬菜</span><i class="glyphicon glyphicon-menu-right"></i></a>
+								<li class="first-list" id="aLi"><a href="javascript:;"><span id="first-list0" title="">蔬菜</span><i class="glyphicon glyphicon-menu-right"></i></a>
 									
-										<ul class="children-list">
-											<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/>小米手机5</a></li>
-											<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/>小米max</a></li>
-											<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/>小米手机4c</a></li>
-											<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/>红米note3</a></li>
-											<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/>红米手机3s</a></li>
-											<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/>红米手机3</a></li>
+										<ul class="children-list" id="children-list">
+											<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/><span id="second-list0" title="11" onclick = "secondCateProList(this.title)">饮食</span></a></li>
+											<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/><span id="second-list1" title="2" onclick = "secondCateProList(this.title)">三华李</span></a></li>
+											<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/><span id="second-list2" title="12" onclick = "secondCateProList(this.title)">龙眼</span></a></li>
+											<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/><span id="second-list3" title="13" onclick = "secondCateProList(this.title)">香蕉</span></a></li>
+											<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/><span id="second-list4"title="14" onclick = "secondCateProList(this.title)">荔枝</span></a></li>
+											<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/><span id="second-list5" title="15" onclick = "secondCateProList(this.title)">甜柿</span></a></li>
 										</ul>
 									
 								</li>
-								<li class="first-list"><a href="javascript:;"><span>水果</span><i class="glyphicon glyphicon-menu-right"></i></a>
+								<li class="first-list" ><a href="javascript:;"><span id="first-list1" title="24">水果</span><i class="glyphicon glyphicon-menu-right"></i></a>
 									<ul class="children-list">
-										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/>小米手机5</a></li>
-										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/>小米max</a></li>
-										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/>机4c</a></li>
-										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/>红米note3</a></li>
-										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/>红机3s</a></li>
-										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/>红米手机3</a></li>
+										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/><span id="a17" title="17" onclick = "secondCateProList(this.title)">函仔鱼</span></a></li>
+										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/><span title="18" onclick = "secondCateProList(this.title)">石斑鱼</span></a></li>
+										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/><span title="19" onclick = "secondCateProList(this.title)">章鱼</span><a></li>
+										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/><span title="20" onclick = "secondCateProList(this.title)">"罗非鱼</span></a></li>
+										<!--<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/><span>红米手机3s</span></a></li>
+										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/><span>红米手机3</span></a></li>-->
 									</ul>
 								</li>
-								<li class="first-list"><a href="javascript:;"><span>海产</span><i class="glyphicon glyphicon-menu-right"></i></a>
+								<li class="first-list" ><a href="javascript:;"><span id="first-list2" title="4">海产</span><i class="glyphicon glyphicon-menu-right"></i></a>
 									<ul class="children-list">
-										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/>小米手机5</a></li>
-										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/>小米max</a></li>
-										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/>小米4c</a></li>
-										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/>红米note3</a></li>
-										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/>红米手机3s</a></li>
-										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/>红米手机3</a></li>
+										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/><span id="a21" title="21" onclick = "secondCateProList(this.title)">苯</span></a></li>
+										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/><span title="22" onclick = "secondCateProList(this.title)">双苯基苯酚</span></a></li>
+										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/><span title="23" onclick = "secondCateProList(this.title)">芘咔唑c</span></a></li>
+										<!--<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/><span>红米note3</span></a></li>
+										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/><span>红米手机3s</span></a></li>
+										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/><span>红米手机3</span></a></li>-->
 									</ul>
 								</li>
-								<li class="first-list"><a href="javascript:;"><span>化工</span><i class="glyphicon glyphicon-menu-right"></i></a>
+								<li class="first-list" ><a href="javascript:;"><span id="first-list3" title="24">化工</span><i class="glyphicon glyphicon-menu-right"></i></a>
 									<ul class="children-list">
-										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/>小米手机5</a></li>
-										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/>小米max</a></li>
-										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/>小机4c</a></li>
-										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/>红米note3</a></li>
-										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/>红机3s</a></li>
-										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/>红米手机3</a></li>
+										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/><span id="a24" title="24" onclick = "secondCateProList(this.title)">绿茶</span></a></li>
+										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/><span title="25" onclick = "secondCateProList(this.title)">瑞龙茶</span></a></li>
+										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/><span title="26" onclick = "secondCateProList(this.title)">榕树茶</span></a></li>
+										<!--<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/><span>红米note3</span></a></li>
+										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/><span>红米手机3s</span></a></li>
+										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/><span>红米手机3</span></a></li>-->
 									</ul>
 								</li>
-								<li class="first-list"><a href="javascript:;"><span>茶类</span><i class="glyphicon glyphicon-menu-right"></i></a>
+								<li class="first-list" ><a href="javascript:;"><span id="first-list4" title="45">茶类</span><i class="glyphicon glyphicon-menu-right"></i></a>
 									<ul class="children-list">
-										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/>小米手机5</a></li>
-										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/>小米max</a></li>
-										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/>小米手机4c</a></li>
-										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/>红米note3</a></li>
-										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/>红米手机3s</a></li>
-										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/>红米手机3</a></li>
+										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/><span id="a27" title="27">鸭蛋</span></a></li>
+										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/><span title="28" onclick = "secondCateProList(this.title)">黄瓜干</span></a></li>
+										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/><span title="29" onclick = "secondCateProList(this.title)">化州托罗饼c</span></a></li>
+										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/><span title="30" onclick = "secondCateProList(this.title)">北界豆饼</span></a></li>
+										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/><span title="31" onclick = "secondCateProList(this.title)">豆饼角</span></a></li>
+										<!--<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/><span>红米手机3</span></a></li>-->
 									</ul>
 								</li>
-								<li class="first-list"><a href="javascript:;"><span>家畜</span><i class="glyphicon glyphicon-menu-right"></i></a>
+								<li class="first-list" ><a href="javascript:;"><span id="first-list5" title="54">家畜</span><i class="glyphicon glyphicon-menu-right"></i></a>
 									<ul class="children-list">
-										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/>小米手机5</a></li>
-										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/>米max</a></li>
-										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/>小米手机4c</a></li>
-										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/>红米note3</a></li>
-										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/>红米手机3s</a></li>
-										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/>红米手机3</a></li>
+										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/><span id="a32" title="32" onclick = "secondCateProList(this.title)">黄茶</span></a></li>
+										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/><span title="33" onclick = "secondCateProList(this.title)">青茶</span></a></li>
+										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/><span title="34" onclick = "secondCateProList(this.title)">黑茶</span></a></li>
+										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/><span title="35" onclick = "secondCateProList(this.title)">红茶</span></a></li>
+										<!--<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/><span>红米手机3s</span></a></li>
+										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/><span>红米手机3</span></a></li>-->
 									</ul>
 								</li>
-								<li class="first-list"><a href="javascript:;"><span>小吃</span><i class="glyphicon glyphicon-menu-right"></i></a>
+								<li class="first-list"><a href="javascript:;"><span id="first-list6" title="8">小吃</span><i class="glyphicon glyphicon-menu-right"></i></a>
 									<ul class="children-list">
-										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/>小米手机5</a></li>
-										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/>小米max</a></li>
-										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/>小米手机4c</a></li>
-										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/>红米note3</a></li>
-										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/>红机3s</a></li>
-										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/>红米手机3</a></li>
+										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/><span></span></a></li>
+										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/><span></span></a></li>
+										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/><span></span></a></li>
+										<!--<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/><span>红米note3</span></a></li>
+										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/><span>红米手机3s</span></a></li>
+										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/><span>红米手机3</span></a></li>-->
 									</ul>
 								</li>
-								<li class="first-list"><a href="javascript:;"><span>工艺品</span><i class="glyphicon glyphicon-menu-right"></i></a>
+								<li class="first-list"><a href="javascript:;"><span id="first-list7" title="7">工艺品</span><i class="glyphicon glyphicon-menu-right"></i></a>
 									<ul class="children-list">
-										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/>小米手机5</a></li>
-										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/>小米max</a></li>
-										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/>小米4c</a></li>
-										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/>红米note3</a></li>
-										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/>红米手机3s</a></li>
-										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/>红米手机3</a></li>
+										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/><span id="a36" title="36" onclick = "secondCateProList(this.title)">南艺工艺美术品</span></a></li>
+										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/><span title="37" onclick = "secondCateProList(this.title)">桂圆工艺蜡烛</span></a></li>
+										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/><span title="38" onclick = "secondCateProList(this.title)">面茄雕刻</span></a></li>
+										<!--<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/><span></span></a></li>
+										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/><span></span></a></li>-->
+										<!--<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/><span>红米手机3</span></a></li>-->
 									</ul>
 								</li>
-								<li class="first-list"><a href="javascript:;"><span>其他</span><i class="glyphicon glyphicon-menu-right"></i></a>
+								<li class="first-list"><a href="javascript:;"><span  id="first-list8" title="87">其他</span><i class="glyphicon glyphicon-menu-right"></i></a>
 									<ul class="children-list">
-										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/>小米手机5</a></li>
-										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/>小米</a></li>
-										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/>小米4c</a></li>
-										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/>note3</a></li>
-										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/>红米手机3s</a></li>
-										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/>红米手机3</a></li>
+										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/><span title="39" onclick = "secondCateProList(this.title)">化州橘红</span></a></li>
+										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/><span title="40" onclick = "secondCateProList(this.title)">桂圆</span></a></li>
+										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/><span id="a41" title="41" onclick = "secondCateProList(this.title)">鉴江红槽</span></a></li>
+										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/><span title="42" onclick = "secondCateProList(this.title)">蜂蜜</span></a></li>
+										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/><span title="43" onclick = "secondCateProList(this.title)">首乌</span></a></li>
+										
+										<!--<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/><span>红米手机3s</span></a></li>
+										<li><a href="javascript:;"><img src="images/demo.jpg" alt="" width="30" height="20"/><span>红米手机3</span></a></li>-->
 									</ul>
 								</li>
 							</ul>
@@ -197,10 +458,10 @@
 							<div class="col-md-12 col-xs-12">
 								<div id="carousel-nav">
 									<div id="carousel-list" style="left: -1226px;">
-										<img src="images/carousel/3.jpg" alt="轮播图3"/>
+										<img src="images/carousel/图层-3323.jpg" alt="轮播图3"/>
 										<img src="images/carousel/1.jpg" alt="轮播图1"/>
-										<img src="images/carousel/2.jpg" alt="轮播图2"/>
-										<img src="images/carousel/3.jpg" alt="轮播图3"/>
+										<img src="images/carousel/图层-0.jpg" alt="轮播图2"/>
+										<img src="images/carousel/图层-3323.jpg" alt="轮播图3"/>
 										<img src="images/carousel/1.jpg" alt="轮播图1"/>
 									</div>
 									<div id="carousel-btn">
@@ -220,22 +481,22 @@
 				<div class="row">
 					<div class="col-md-3 col-xs-3">
 						<div class="home-promo">
-							<a href="#"><img src="images/home-promo/1.png"/></a>
+							<a href="#"><img src="images/home-promo/图层-93.jpg"/></a>
 						</div>
 					</div>
 					<div class="col-md-3 col-xs-3">
 						<div class="home-promo">
-							<a href="#"><img src="images/home-promo/2.png"/></a>
+							<a href="#"><img src="images/home-promo/图层-9.jpg"/></a>
 						</div>
 					</div>
 					<div class="col-md-3 col-xs-3">
 						<div class="home-promo">
-							<a href="#"><img src="images/home-promo/3.png"/></a>
+							<a href="#"><img src="images/home-promo/图层3.jpg"/></a>
 						</div>
 					</div>
 					<div class="col-md-3 col-xs-3">
 						<div class="home-promo">
-							<a href="#"><img src="images/home-promo/1.png"/></a>
+							<a href="#"><img src="images/home-promo/大米.jpg"/></a>
 						</div>
 					</div>
 				</div>
@@ -246,11 +507,11 @@
 						</div>
 						<div class="select-promo">
 							<ul>
-								<li id="move"><a href="#"><img src="images/select-promo/1.png"/ alt=""></a></li>
-								<li><a href="#"><img src="images/select-promo/2.png"/ alt=""></a></li>
-								<li><a href="#"><img src="images/select-promo/3.png"/ alt=""></a></li>
-								<li><a href="#"><img src="images/select-promo/4.png"/ alt=""></a></li>
-								<li><a href="#"><img src="images/select-promo/5.png"/ alt=""></a></li>
+								<li id="move"><a href="#"><img id="select-photo0" onclick="aaa(this.name)" name="" / alt=""></a></li>
+								<li><a href="#"><img id="select-photo1" onclick="aaa(this.name)" name="" / alt=""></a></li>
+								<li><a href="#"><img id="select-photo2" onclick="aaa(this.name)" name="" / alt=""></a></li>
+								<li><a href="#"><img id="select-photo3" name="" onclick="aaa(this.name)" / alt=""></a></li>
+								<li><a href="#"><img id="select-photo4" name="" onclick="aaa(this.name)" / alt=""></a></li>
 							</ul>			
 						</div>
 					</div>
@@ -262,10 +523,10 @@
 						</div>
 						<div class="select-promo">
 							<ul>
-								<li><a href="#"><img src="images/select-promo/1.png"/ alt=""></a>
+								<li><a href="#"><img id="plant0" onclick="aaa(this.name)" name="" alt=""/></a>
 									<div class="description">
 										<div class="caption">
-										<p>七格格夏新款 静谧蓝翻领拼接露肩短</p>
+										<p id="description0" name="">七格格夏新款 静谧蓝翻领拼接露肩短</p>
 									</div>
 									<div class="add-into-shopping"></div>
 									<div class="goods-price">
@@ -273,10 +534,10 @@
 									</div>
 									</div>
 								</li>
-								<li><a href="#"><img src="images/select-promo/2.png"/ alt=""></a>
+								<li><a href="#"><img id="plant1"  onclick="aaa(this.name)" name="" alt=""/></a>
 									<div class="description">
 										<div class="caption">
-										<p>七格格夏新款 静谧蓝翻领拼接露肩短</p>
+										<p id="description1" name="">七格格夏新款 静谧蓝翻领拼接露肩短</p>
 									</div>
 									<div class="add-into-shopping"></div>
 									<div class="goods-price">
@@ -284,10 +545,10 @@
 									</div>
 									</div>
 								</li>
-								<li><a href="#"><img src="images/select-promo/3.png"/ alt=""></a>
+								<li><a href="#"><img id="plant2" onclick="aaa(this.name)" name="" alt=""/></a>
 									<div class="description">
 										<div class="caption">
-										<p>七格格夏新款 静谧蓝翻领拼接露肩短</p>
+										<p id="description2" name="">七格格夏新款 静谧蓝翻领拼接露肩短</p>
 									</div>
 									<div class="add-into-shopping"></div>
 									<div class="goods-price">
@@ -295,31 +556,31 @@
 									</div>
 									</div>
 								</li>
-								<li><a href="#"><img src="images/select-promo/4.png"/ alt=""></a>
+								<li><a href="#"><img id="plant3" onclick="aaa(this.name)" name="" alt=""/></a>
 									<div class="description">
 										<div class="caption">
-										<p>七格格夏新款 静谧蓝翻领拼接露肩短</p>
+										<p id="description3" name="">七格格夏新款 静谧蓝翻领拼接露肩短</p>
 									</div>
 									<div class="add-into-shopping"></div>
 									<div class="goods-price">
-										<strong><em>￥</em><i>179.0</i></strong>
+										<strong><em>￥</em><i id="price3">179.0</i></strong>
 									</div>
 									</div>
 								</li>
-								<li><a href="#"><img src="images/select-promo/5.png"/ alt=""></a>
+								<li><a href="#"><img id="plant4" onclick="aaa(this.name)" name="" alt=""/></a>
 									<div class="description">
 										<div class="caption">
-										<p>七格格夏新款 静谧蓝翻领拼接露肩短</p>
+										<p id="description4" name="">七格格夏新款 静谧蓝翻领拼接露肩短</p>
 									</div>
 									<div class="add-into-shopping"></div>
 									<div class="goods-price">
-										<strong><em>￥</em><i>149.0</i></strong>
+										<strong><em>￥</em><i id="price4">149.0</i></strong>
 									</div>
 									</div>
 								</li>
 							</ul>			
 						</div>
-						<div class="select-promo">
+						<!--<div class="select-promo">
 							<ul>
 								<li><a href="#"><img src="images/select-promo/1.png"/ alt=""></a>
 									<div class="description">
@@ -377,7 +638,7 @@
 									</div>
 								</li>
 							</ul>			
-						</div>
+						</div>-->
 					</div>
 				</div>
 				<div class="footer-first">
