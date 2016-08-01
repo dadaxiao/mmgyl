@@ -1,0 +1,1611 @@
+[ 2016-08-01T09:32:25+08:00 ] ::1 /mmgyl/index.php/Home/proshow/secondCateProList?secondCateId=false
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.032917s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002532s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.4035s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0095s ]
+SQL: SELECT `proId`,`pname`,`price`,`pimg` FROM `pro` WHERE ( cId=false ) LIMIT 0,20   [ RunTime:0.1927s ]
+NOTIC: [8] Undefined variable: data D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 199 行.
+
+[ 2016-08-01T09:32:55+08:00 ] ::1 /mmgyl/index.php/Home/proshow/secondCateProList?secondCateId=false
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002661s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005539s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005764s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.2490s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0572s ]
+
+[ 2016-08-01T09:33:07+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getFirstCate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001546s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002570s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.1738s ]
+SQL: SELECT `cateName`,`cId` FROM `cate` WHERE ( pid=0 )  [ RunTime:0.0612s ]
+
+[ 2016-08-01T09:33:08+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getCateList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001862s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002492s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.1372s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0217s ]
+SQL: SELECT `cId` FROM `cate` WHERE ( pid=1 )  [ RunTime:0.0584s ]
+SQL: SELECT `proId`,`pimg`,`pName`,`price` FROM `pro` WHERE `cId` IN (2,11,12,13,14) LIMIT 6,5   [ RunTime:0.0239s ]
+
+[ 2016-08-01T09:33:08+08:00 ] ::1 /mmgyl/index.php/Home/proshow/makeChoiceForYou
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001554s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002919s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003148s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.1650s ]
+SQL: SELECT `pImg`,`proId` FROM `pro` LIMIT 0,5   [ RunTime:0.0072s ]
+
+[ 2016-08-01T09:33:25+08:00 ] ::1 /mmgyl/index.php/Home/proshow/secondCateProList?secondCateId=11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003510s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.012473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012710s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0309s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0396s ]
+SQL: SELECT `proId`,`pname`,`price`,`pimg` FROM `pro` WHERE ( cId=11 ) LIMIT 0,20   [ RunTime:0.0639s ]
+NOTIC: [8] Undefined variable: data D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 199 行.
+
+[ 2016-08-01T09:33:43+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getCateList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001774s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.013763s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014018s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0658s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0269s ]
+SQL: SELECT `cId` FROM `cate` WHERE ( pid=1 )  [ RunTime:0.0013s ]
+SQL: SELECT `proId`,`pimg`,`pName`,`price` FROM `pro` WHERE `cId` IN (2,11,12,13,14) LIMIT 6,5   [ RunTime:0.0013s ]
+
+[ 2016-08-01T09:33:43+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getFirstCate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.033308s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002920s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003133s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0025s ]
+
+[ 2016-08-01T09:33:43+08:00 ] ::1 /mmgyl/index.php/Home/proshow/makeChoiceForYou
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.038319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005650s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006496s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0023s ]
+SQL: SELECT `pImg`,`proId` FROM `pro` LIMIT 0,5   [ RunTime:0.0010s ]
+
+[ 2016-08-01T09:33:58+08:00 ] ::1 /mmgyl/index.php/Home/proshow/makeChoiceForYou
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001778s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002215s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002443s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0540s ]
+SQL: SELECT `pImg`,`proId` FROM `pro` LIMIT 0,5   [ RunTime:0.0013s ]
+
+[ 2016-08-01T09:33:58+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getFirstCate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.026894s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.020574s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.020827s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0025s ]
+
+[ 2016-08-01T09:33:58+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getCateList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.018247s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.030650s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.032344s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0215s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0021s ]
+SQL: SELECT `cId` FROM `cate` WHERE ( pid=1 )  [ RunTime:0.0012s ]
+SQL: SELECT `proId`,`pimg`,`pName`,`price` FROM `pro` WHERE `cId` IN (2,11,12,13,14) LIMIT 6,5   [ RunTime:0.0012s ]
+
+[ 2016-08-01T09:34:00+08:00 ] ::1 /mmgyl/index.php/Home/proshow/secondCateProList?secondCateId=11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004009s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002497s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002727s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0461s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0078s ]
+
+[ 2016-08-01T09:34:03+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getCateList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001790s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003169s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003382s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0412s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.1090s ]
+SQL: SELECT `cId` FROM `cate` WHERE ( pid=1 )  [ RunTime:0.0011s ]
+SQL: SELECT `proId`,`pimg`,`pName`,`price` FROM `pro` WHERE `cId` IN (2,11,12,13,14) LIMIT 6,5   [ RunTime:0.1336s ]
+
+[ 2016-08-01T09:34:03+08:00 ] ::1 /mmgyl/index.php/Home/proshow/makeChoiceForYou
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002546s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002265s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002482s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0582s ]
+SQL: SELECT `pImg`,`proId` FROM `pro` LIMIT 0,5   [ RunTime:0.0227s ]
+
+[ 2016-08-01T09:34:03+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getFirstCate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005167s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004651s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004899s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0795s ]
+
+[ 2016-08-01T09:34:15+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proShow?proId=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002853s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003087s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `pro_picture` [ RunTime:0.1322s ]
+SQL: SELECT * FROM `pro` WHERE `proId` = 1  [ RunTime:0.0481s ]
+SQL: SELECT `picUrl` FROM `pro_picture` WHERE `proId` = 1  [ RunTime:0.0616s ]
+
+[ 2016-08-01T09:34:24+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getFirstCate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002142s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.024956s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.025521s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0501s ]
+
+[ 2016-08-01T09:34:25+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getCateList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.023221s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002689s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002917s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.1263s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0603s ]
+SQL: SELECT `cId` FROM `cate` WHERE ( pid=1 )  [ RunTime:0.0003s ]
+SQL: SELECT `proId`,`pimg`,`pName`,`price` FROM `pro` WHERE `cId` IN (2,11,12,13,14) LIMIT 6,5   [ RunTime:0.2392s ]
+
+[ 2016-08-01T09:34:25+08:00 ] ::1 /mmgyl/index.php/Home/proshow/makeChoiceForYou
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007887s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007647s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0316s ]
+SQL: SELECT `pImg`,`proId` FROM `pro` LIMIT 0,5   [ RunTime:0.0009s ]
+
+[ 2016-08-01T09:34:28+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proShow?proId=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001487s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003803s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `pro_picture` [ RunTime:0.0200s ]
+SQL: SELECT * FROM `pro` WHERE `proId` = 2  [ RunTime:0.0015s ]
+SQL: SELECT `picUrl` FROM `pro_picture` WHERE `proId` = 2  [ RunTime:0.0055s ]
+
+[ 2016-08-01T09:34:34+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getCateList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002086s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005834s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006063s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0021s ]
+SQL: SELECT `cId` FROM `cate` WHERE ( pid=1 )  [ RunTime:0.0253s ]
+SQL: SELECT `proId`,`pimg`,`pName`,`price` FROM `pro` WHERE `cId` IN (2,11,12,13,14) LIMIT 6,5   [ RunTime:0.0018s ]
+
+[ 2016-08-01T09:34:34+08:00 ] ::1 /mmgyl/index.php/Home/proshow/makeChoiceForYou
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.073778s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.013028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013269s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0024s ]
+SQL: SELECT `pImg`,`proId` FROM `pro` LIMIT 0,5   [ RunTime:0.0161s ]
+
+[ 2016-08-01T09:34:34+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getFirstCate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000208s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003253s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003668s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0022s ]
+
+[ 2016-08-01T09:34:36+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proShow?proId=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001958s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001608s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001751s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0285s ]
+SQL: SHOW COLUMNS FROM `pro_picture` [ RunTime:0.0764s ]
+SQL: SELECT * FROM `pro` WHERE `proId` = 10  [ RunTime:0.0018s ]
+SQL: SELECT `picUrl` FROM `pro_picture` WHERE `proId` = 10  [ RunTime:0.0380s ]
+
+[ 2016-08-01T09:36:22+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proShow?proId=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008994s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.025073s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.025284s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0425s ]
+SQL: SHOW COLUMNS FROM `pro_picture` [ RunTime:0.0743s ]
+
+[ 2016-08-01T09:36:23+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getFirstCate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001780s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002716s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002959s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0148s ]
+SQL: SELECT `cateName`,`cId` FROM `cate` WHERE ( pid=0 )  [ RunTime:0.0215s ]
+
+[ 2016-08-01T09:36:23+08:00 ] ::1 /mmgyl/index.php/Home/proshow/makeChoiceForYou
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000403s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003556s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004150s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004422s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0570s ]
+SQL: SELECT `pImg`,`proId` FROM `pro` LIMIT 0,5   [ RunTime:0.0010s ]
+
+[ 2016-08-01T09:36:24+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getCateList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005755s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004914s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005114s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.1051s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0020s ]
+SQL: SELECT `cId` FROM `cate` WHERE ( pid=1 )  [ RunTime:0.0698s ]
+SQL: SELECT `proId`,`pimg`,`pName`,`price` FROM `pro` WHERE `cId` IN (2,11,12,13,14) LIMIT 6,5   [ RunTime:0.0015s ]
+
+[ 2016-08-01T09:36:26+08:00 ] ::1 /mmgyl/index.php/Home/proshow/secondCateProList?secondCateId=11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006225s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003548s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0029s ]
+SQL: SELECT `proId`,`pname`,`price`,`pimg` FROM `pro` WHERE ( cId=11 ) LIMIT 0,20   [ RunTime:0.0011s ]
+NOTIC: [8] Undefined variable: data D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 199 行.
+
+[ 2016-08-01T09:38:01+08:00 ] ::1 /mmgyl/index.php/Home/proshow/makeChoiceForYou
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009414s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.016109s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016304s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0082s ]
+SQL: SELECT `pImg`,`proId` FROM `pro` LIMIT 0,5   [ RunTime:0.0017s ]
+
+[ 2016-08-01T09:38:02+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getFirstCate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008937s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.014543s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014752s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0359s ]
+
+[ 2016-08-01T09:38:02+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getCateList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009002s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.014545s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014766s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0637s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0022s ]
+SQL: SELECT `cId` FROM `cate` WHERE ( pid=1 )  [ RunTime:0.0327s ]
+SQL: SELECT `proId`,`pimg`,`pName`,`price` FROM `pro` WHERE `cId` IN (2,11,12,13,14) LIMIT 6,5   [ RunTime:0.0012s ]
+
+[ 2016-08-01T09:39:46+08:00 ] ::1 /mmgyl/index.php/Home/proshow/secondCateProList?secondCateId=11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.033880s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.048934s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.049136s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0277s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.1033s ]
+SQL: SELECT `proId`,`pname`,`price`,`pimg` FROM `pro` WHERE ( cId=11 ) LIMIT 0,20   [ RunTime:0.0546s ]
+NOTIC: [8] Undefined variable: data D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 199 行.
+
+[ 2016-08-01T09:39:51+08:00 ] ::1 /mmgyl/index.php/Home/proshow/secondCateProList?secondCateId=11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000385s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007688s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003534s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003782s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0257s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0682s ]
+
+[ 2016-08-01T09:39:53+08:00 ] ::1 /mmgyl/index.php/Home/proshow/secondCateProList?secondCateId=11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001103s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001012s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001106s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0007s ]
+
+[ 2016-08-01T09:39:56+08:00 ] ::1 /mmgyl/index.php/Home/proshow/secondCateProList?secondCateId=11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003959s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004216s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0413s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0613s ]
+
+[ 2016-08-01T09:39:58+08:00 ] ::1 /mmgyl/index.php/Home/proshow/secondCateProList?secondCateId=11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001750s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002078s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002282s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0025s ]
+
+[ 2016-08-01T09:39:58+08:00 ] ::1 /mmgyl/index.php/Home/proshow/secondCateProList?secondCateId=11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000590s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000824s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000910s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0010s ]
+
+[ 2016-08-01T09:40:00+08:00 ] ::1 /mmgyl/index.php/Home/proshow/secondCateProList?secondCateId=11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002371s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002901s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003148s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0438s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0693s ]
+
+[ 2016-08-01T09:40:15+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getCateList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001620s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001778s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001961s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0672s ]
+SQL: SELECT `cId` FROM `cate` WHERE ( pid=1 )  [ RunTime:0.0016s ]
+SQL: SELECT `proId`,`pimg`,`pName`,`price` FROM `pro` WHERE `cId` IN (2,11,12,13,14) LIMIT 6,5   [ RunTime:0.0015s ]
+
+[ 2016-08-01T09:40:15+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getFirstCate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001651s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004428s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004646s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0678s ]
+SQL: SELECT `cateName`,`cId` FROM `cate` WHERE ( pid=0 )  [ RunTime:0.0142s ]
+
+[ 2016-08-01T09:40:15+08:00 ] ::1 /mmgyl/index.php/Home/proshow/makeChoiceForYou
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002076s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010412s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010672s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.1255s ]
+SQL: SELECT `pImg`,`proId` FROM `pro` LIMIT 0,5   [ RunTime:0.0011s ]
+
+[ 2016-08-01T09:40:17+08:00 ] ::1 /mmgyl/index.php/Home/proshow/secondCateProList?secondCateId=11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002014s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002271s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002484s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0199s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0091s ]
+
+[ 2016-08-01T09:40:22+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proShow?proId=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002030s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002552s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002751s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `pro_picture` [ RunTime:0.7192s ]
+SQL: SELECT * FROM `pro` WHERE `proId` = 6  [ RunTime:0.0017s ]
+SQL: SELECT `picUrl` FROM `pro_picture` WHERE `proId` = 6  [ RunTime:0.0548s ]
+
+[ 2016-08-01T09:40:40+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getFirstCate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001970s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003594s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0031s ]
+
+[ 2016-08-01T09:40:40+08:00 ] ::1 /mmgyl/index.php/Home/proshow/makeChoiceForYou
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002160s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008696s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009000s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0287s ]
+SQL: SELECT `pImg`,`proId` FROM `pro` LIMIT 0,5   [ RunTime:0.0009s ]
+
+[ 2016-08-01T09:40:40+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getCateList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005877s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006164s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0089s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0024s ]
+SQL: SELECT `cId` FROM `cate` WHERE ( pid=1 )  [ RunTime:0.0172s ]
+SQL: SELECT `proId`,`pimg`,`pName`,`price` FROM `pro` WHERE `cId` IN (2,11,12,13,14) LIMIT 6,5   [ RunTime:0.0272s ]
+
+[ 2016-08-01T09:40:42+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proShow?proId=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005680s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002818s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003046s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0153s ]
+SQL: SHOW COLUMNS FROM `pro_picture` [ RunTime:0.0028s ]
+
+[ 2016-08-01T09:40:45+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proShow?proId=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001858s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002928s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003188s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0556s ]
+SQL: SHOW COLUMNS FROM `pro_picture` [ RunTime:0.0184s ]
+
+[ 2016-08-01T09:40:48+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proShow?proId=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001697s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.019311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.019598s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `pro_picture` [ RunTime:0.0283s ]
+
+[ 2016-08-01T09:41:33+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proShow?proId=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001835s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002817s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003052s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0518s ]
+SQL: SHOW COLUMNS FROM `pro_picture` [ RunTime:0.0107s ]
+
+[ 2016-08-01T09:41:34+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getCateList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000670s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000756s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000850s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0691s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0007s ]
+SQL: SELECT `cId` FROM `cate` WHERE ( pid=1 )  [ RunTime:0.0004s ]
+SQL: SELECT `proId`,`pimg`,`pName`,`price` FROM `pro` WHERE `cId` IN (2,11,12,13,14) LIMIT 6,5   [ RunTime:0.0005s ]
+
+[ 2016-08-01T09:41:34+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getFirstCate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000652s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001088s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0006s ]
+
+[ 2016-08-01T09:41:34+08:00 ] ::1 /mmgyl/index.php/Home/proshow/makeChoiceForYou
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000753s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.053168s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.053255s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0272s ]
+SQL: SELECT `pImg`,`proId` FROM `pro` LIMIT 0,5   [ RunTime:0.0004s ]
+
+[ 2016-08-01T09:41:36+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proShow?proId=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001637s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002746s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002972s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `pro_picture` [ RunTime:0.4891s ]
+
+[ 2016-08-01T09:41:47+08:00 ] ::1 /mmgyl/index.php/Home/proshow/secondCateProList?secondCateId=11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004028s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004466s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0389s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0018s ]
+SQL: SELECT `proId`,`pname`,`price`,`pimg` FROM `pro` WHERE ( cId=11 ) LIMIT 0,20   [ RunTime:0.0017s ]
+NOTIC: [8] Undefined variable: data D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 199 行.
+
+[ 2016-08-01T09:41:49+08:00 ] ::1 /mmgyl/index.php/Home/proshow/secondCateProList?secondCateId=11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002604s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.019333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.019603s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0071s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0033s ]
+
+[ 2016-08-01T09:41:52+08:00 ] ::1 /mmgyl/index.php/Home/proshow/secondCateProList?secondCateId=11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005748s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004332s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0450s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0019s ]
+
+[ 2016-08-01T09:42:08+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getFirstCate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003897s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003270s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0101s ]
+
+[ 2016-08-01T09:42:09+08:00 ] ::1 /mmgyl/index.php/Home/proshow/makeChoiceForYou
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.016198s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.017965s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.018251s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0048s ]
+SQL: SELECT `pImg`,`proId` FROM `pro` LIMIT 0,5   [ RunTime:0.0482s ]
+
+[ 2016-08-01T09:42:09+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getCateList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003647s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004222s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004489s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0155s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0026s ]
+SQL: SELECT `cId` FROM `cate` WHERE ( pid=1 )  [ RunTime:0.0014s ]
+SQL: SELECT `proId`,`pimg`,`pName`,`price` FROM `pro` WHERE `cId` IN (2,11,12,13,14) LIMIT 6,5   [ RunTime:0.0013s ]
+
+[ 2016-08-01T09:42:13+08:00 ] ::1 /mmgyl/index.php/Home/proshow/makeChoiceForYou
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002638s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002129s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002336s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0033s ]
+SQL: SELECT `pImg`,`proId` FROM `pro` LIMIT 0,5   [ RunTime:0.0013s ]
+
+[ 2016-08-01T09:42:13+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getFirstCate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003473s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003208s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003426s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0029s ]
+
+[ 2016-08-01T09:42:13+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getCateList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.014980s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003800s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004384s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0035s ]
+SQL: SELECT `cId` FROM `cate` WHERE ( pid=1 )  [ RunTime:0.0667s ]
+SQL: SELECT `proId`,`pimg`,`pName`,`price` FROM `pro` WHERE `cId` IN (2,11,12,13,14) LIMIT 6,5   [ RunTime:0.0013s ]
+
+[ 2016-08-01T09:42:20+08:00 ] ::1 /mmgyl/index.php/Home/proshow/secondCateProList?secondCateId=11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002511s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002588s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002836s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0032s ]
+
+[ 2016-08-01T09:42:23+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getCateList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001612s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001792s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001966s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0030s ]
+SQL: SELECT `cId` FROM `cate` WHERE ( pid=1 )  [ RunTime:0.1220s ]
+SQL: SELECT `proId`,`pimg`,`pName`,`price` FROM `pro` WHERE `cId` IN (2,11,12,13,14) LIMIT 6,5   [ RunTime:0.0014s ]
+
+[ 2016-08-01T09:42:23+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getFirstCate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001965s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002223s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002404s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0019s ]
+SQL: SELECT `cateName`,`cId` FROM `cate` WHERE ( pid=0 )  [ RunTime:0.0013s ]
+
+[ 2016-08-01T09:42:23+08:00 ] ::1 /mmgyl/index.php/Home/proshow/makeChoiceForYou
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001647s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005075s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005303s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0024s ]
+SQL: SELECT `pImg`,`proId` FROM `pro` LIMIT 0,5   [ RunTime:0.0011s ]
+
+[ 2016-08-01T09:42:26+08:00 ] ::1 /mmgyl/index.php/Home/proshow/secondCateProList?secondCateId=11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002331s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002231s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002454s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0688s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0028s ]
+
+[ 2016-08-01T09:44:08+08:00 ] ::1 /mmgyl/index.php/Home/proshow/secondCateProList?secondCateId=11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.017490s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003241s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003470s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0873s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0035s ]
+SQL: SELECT `proId`,`pname`,`price`,`pimg` FROM `pro` WHERE ( cId=11 ) LIMIT 0,20   [ RunTime:0.0603s ]
+NOTIC: [8] Undefined variable: data D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 199 行.
+
+[ 2016-08-01T09:44:09+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getCateList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001915s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006571s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0025s ]
+SQL: SELECT `cId` FROM `cate` WHERE ( pid=1 )  [ RunTime:0.0012s ]
+SQL: SELECT `proId`,`pimg`,`pName`,`price` FROM `pro` WHERE `cId` IN (2,11,12,13,14) LIMIT 6,5   [ RunTime:0.0103s ]
+
+[ 2016-08-01T09:44:09+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getFirstCate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002130s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.021318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.021550s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0112s ]
+
+[ 2016-08-01T09:44:10+08:00 ] ::1 /mmgyl/index.php/Home/proshow/makeChoiceForYou
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002415s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.017950s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.018217s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0459s ]
+SQL: SELECT `pImg`,`proId` FROM `pro` LIMIT 0,5   [ RunTime:0.0004s ]
+
+[ 2016-08-01T09:44:11+08:00 ] ::1 /mmgyl/index.php/Home/proshow/secondCateProList?secondCateId=11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001727s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002692s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0022s ]
+
+[ 2016-08-01T09:44:12+08:00 ] ::1 /mmgyl/index.php/Home/proshow/secondCateProList?secondCateId=11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000757s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001113s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0018s ]
+
+[ 2016-08-01T09:44:16+08:00 ] ::1 /mmgyl/index.php/Home/proshow/secondCateProList?secondCateId=11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001775s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002154s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002355s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0280s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0026s ]
+
+[ 2016-08-01T09:44:20+08:00 ] ::1 /mmgyl/index.php/Home/proshow/secondCateProList?secondCateId=11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000664s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000916s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001005s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0008s ]
+
+[ 2016-08-01T09:44:23+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getCateList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001727s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002870s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0505s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0143s ]
+SQL: SELECT `cId` FROM `cate` WHERE ( pid=1 )  [ RunTime:0.0012s ]
+SQL: SELECT `proId`,`pimg`,`pName`,`price` FROM `pro` WHERE `cId` IN (2,11,12,13,14) LIMIT 6,5   [ RunTime:0.0020s ]
+
+[ 2016-08-01T09:44:23+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getFirstCate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.091065s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.038287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.038662s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0024s ]
+
+[ 2016-08-01T09:44:23+08:00 ] ::1 /mmgyl/index.php/Home/proshow/makeChoiceForYou
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003445s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004171s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004399s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0205s ]
+SQL: SELECT `pImg`,`proId` FROM `pro` LIMIT 0,5   [ RunTime:0.0279s ]
+
+[ 2016-08-01T09:44:25+08:00 ] ::1 /mmgyl/index.php/Home/proshow/secondCateProList?secondCateId=11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002695s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0212s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0024s ]
+
+[ 2016-08-01T09:44:59+08:00 ] ::1 /mmgyl/index.php/Home/proshow/secondCateProList?secondCateId=11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000993s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.011003s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011099s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0008s ]
+
+[ 2016-08-01T09:45:00+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getCateList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001923s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002210s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002424s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.1628s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0020s ]
+SQL: SELECT `cId` FROM `cate` WHERE ( pid=1 )  [ RunTime:0.0011s ]
+SQL: SELECT `proId`,`pimg`,`pName`,`price` FROM `pro` WHERE `cId` IN (2,11,12,13,14) LIMIT 6,5   [ RunTime:0.0348s ]
+
+[ 2016-08-01T09:45:00+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getFirstCate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001699s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002455s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002655s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0022s ]
+SQL: SELECT `cateName`,`cId` FROM `cate` WHERE ( pid=0 )  [ RunTime:0.0012s ]
+
+[ 2016-08-01T09:45:00+08:00 ] ::1 /mmgyl/index.php/Home/proshow/makeChoiceForYou
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001812s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002167s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002391s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0032s ]
+SQL: SELECT `pImg`,`proId` FROM `pro` LIMIT 0,5   [ RunTime:0.2498s ]
+
+[ 2016-08-01T09:45:23+08:00 ] ::1 /mmgyl/index.php/Home/proshow/secondCateProList?secondCateId=11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.020424s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015649s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015856s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0024s ]
+
+[ 2016-08-01T09:45:41+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getCateList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003506s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.023560s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.024002s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0623s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0021s ]
+SQL: SELECT `cId` FROM `cate` WHERE ( pid=1 )  [ RunTime:0.0012s ]
+SQL: SELECT `proId`,`pimg`,`pName`,`price` FROM `pro` WHERE `cId` IN (2,11,12,13,14) LIMIT 6,5   [ RunTime:0.0012s ]
+
+[ 2016-08-01T09:45:41+08:00 ] ::1 /mmgyl/index.php/Home/proshow/makeChoiceForYou
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000232s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002590s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0537s ]
+SQL: SELECT `pImg`,`proId` FROM `pro` LIMIT 0,5   [ RunTime:0.0113s ]
+
+[ 2016-08-01T09:45:41+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getFirstCate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.017880s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.021539s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.021794s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.2231s ]
+
+[ 2016-08-01T09:45:46+08:00 ] ::1 /mmgyl/index.php/Home/proshow/makeChoiceForYou
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003142s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003389s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.1498s ]
+SQL: SELECT `pImg`,`proId` FROM `pro` LIMIT 0,5   [ RunTime:0.0011s ]
+
+[ 2016-08-01T09:45:46+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getCateList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002177s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002839s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003154s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0021s ]
+SQL: SELECT `cId` FROM `cate` WHERE ( pid=1 )  [ RunTime:0.0136s ]
+SQL: SELECT `proId`,`pimg`,`pName`,`price` FROM `pro` WHERE `cId` IN (2,11,12,13,14) LIMIT 6,5   [ RunTime:0.0022s ]
+
+[ 2016-08-01T09:45:46+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getFirstCate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009024s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.011462s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011858s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0237s ]
+
+[ 2016-08-01T09:45:51+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getCateList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003514s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002683s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0019s ]
+SQL: SELECT `cId` FROM `cate` WHERE ( pid=1 )  [ RunTime:0.0015s ]
+SQL: SELECT `proId`,`pimg`,`pName`,`price` FROM `pro` WHERE `cId` IN (2,11,12,13,14) LIMIT 6,5   [ RunTime:0.0012s ]
+
+[ 2016-08-01T09:45:51+08:00 ] ::1 /mmgyl/index.php/Home/proshow/makeChoiceForYou
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001622s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003521s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0022s ]
+SQL: SELECT `pImg`,`proId` FROM `pro` LIMIT 0,5   [ RunTime:0.0009s ]
+
+[ 2016-08-01T09:45:51+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getFirstCate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001939s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004572s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004790s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0021s ]
+
+[ 2016-08-01T09:47:10+08:00 ] ::1 /mmgyl/index.php/Home/proshow/secondCateProList?secondCateId=11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009744s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.061678s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.061807s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0186s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0010s ]
+SQL: SELECT `proId`,`pname`,`price`,`pimg` FROM `pro` WHERE ( cId=11 ) LIMIT 0,20   [ RunTime:0.0011s ]
+NOTIC: [8] Undefined variable: data D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 199 行.
+
+[ 2016-08-01T09:47:18+08:00 ] ::1 /mmgyl/index.php/Home/proshow/secondCateProList?secondCateId=11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002955s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003174s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0266s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0035s ]
+
+[ 2016-08-01T09:48:38+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getFirstCate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002858s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002689s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003162s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0038s ]
+SQL: SELECT `cateName`,`cId` FROM `cate` WHERE ( pid=0 )  [ RunTime:0.0025s ]
+
+[ 2016-08-01T09:48:38+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getCateList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007183s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.019183s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.019429s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0021s ]
+SQL: SELECT `cId` FROM `cate` WHERE ( pid=1 )  [ RunTime:0.0011s ]
+SQL: SELECT `proId`,`pimg`,`pName`,`price` FROM `pro` WHERE `cId` IN (2,11,12,13,14) LIMIT 6,5   [ RunTime:0.0015s ]
+
+[ 2016-08-01T09:48:38+08:00 ] ::1 /mmgyl/index.php/Home/proshow/makeChoiceForYou
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002247s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005689s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006011s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0043s ]
+SQL: SELECT `pImg`,`proId` FROM `pro` LIMIT 0,5   [ RunTime:0.0013s ]
+
+[ 2016-08-01T09:48:43+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getFirstCate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002032s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002547s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0197s ]
+
+[ 2016-08-01T09:48:43+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getCateList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001817s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002685s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0022s ]
+SQL: SELECT `cId` FROM `cate` WHERE ( pid=1 )  [ RunTime:0.0013s ]
+SQL: SELECT `proId`,`pimg`,`pName`,`price` FROM `pro` WHERE `cId` IN (2,11,12,13,14) LIMIT 6,5   [ RunTime:0.0014s ]
+
+[ 2016-08-01T09:48:43+08:00 ] ::1 /mmgyl/index.php/Home/proshow/makeChoiceForYou
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002286s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.032832s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.033084s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0323s ]
+SQL: SELECT `pImg`,`proId` FROM `pro` LIMIT 0,5   [ RunTime:0.0016s ]
+
+[ 2016-08-01T09:48:45+08:00 ] ::1 /mmgyl/index.php/Home/proshow/secondCateProList?secondCateId=11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003718s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006847s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007778s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0013s ]
+
+[ 2016-08-01T09:48:50+08:00 ] ::1 /mmgyl/index.php/Home/proshow/secondCateProList?secondCateId=11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001478s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002787s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0020s ]
+
+[ 2016-08-01T09:48:52+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proShow?proId=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001796s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002827s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `pro_picture` [ RunTime:0.0903s ]
+SQL: SELECT * FROM `pro` WHERE `proId` = 6  [ RunTime:0.0020s ]
+SQL: SELECT `picUrl` FROM `pro_picture` WHERE `proId` = 6  [ RunTime:0.0311s ]
+
+[ 2016-08-01T09:48:57+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proShow?proId=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000094s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010388s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005069s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005734s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0119s ]
+SQL: SHOW COLUMNS FROM `pro_picture` [ RunTime:0.0399s ]
+
+[ 2016-08-01T09:50:29+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getCateList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002126s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.025709s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.025952s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0023s ]
+SQL: SELECT `cId` FROM `cate` WHERE ( pid=1 )  [ RunTime:0.0015s ]
+SQL: SELECT `proId`,`pimg`,`pName`,`price` FROM `pro` WHERE `cId` IN (2,11,12,13,14) LIMIT 6,5   [ RunTime:0.0017s ]
+
+[ 2016-08-01T09:50:29+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getFirstCate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001900s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.027244s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.027492s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0024s ]
+
+[ 2016-08-01T09:50:29+08:00 ] ::1 /mmgyl/index.php/Home/proshow/makeChoiceForYou
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.018283s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005629s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005870s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0030s ]
+SQL: SELECT `pImg`,`proId` FROM `pro` LIMIT 0,5   [ RunTime:0.0013s ]
+
+[ 2016-08-01T09:50:43+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getFirstCate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001823s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002645s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0034s ]
+SQL: SELECT `cateName`,`cId` FROM `cate` WHERE ( pid=0 )  [ RunTime:0.0015s ]
+
+[ 2016-08-01T09:50:43+08:00 ] ::1 /mmgyl/index.php/Home/proshow/makeChoiceForYou
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.024839s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004204s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004425s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0024s ]
+SQL: SELECT `pImg`,`proId` FROM `pro` LIMIT 0,5   [ RunTime:0.0009s ]
+
+[ 2016-08-01T09:50:44+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getCateList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.058728s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.022597s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.022842s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0020s ]
+SQL: SELECT `cId` FROM `cate` WHERE ( pid=1 )  [ RunTime:0.0011s ]
+SQL: SELECT `proId`,`pimg`,`pName`,`price` FROM `pro` WHERE `cId` IN (2,11,12,13,14) LIMIT 6,5   [ RunTime:0.0170s ]
+
+[ 2016-08-01T09:50:49+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getCateList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001718s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002503s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002743s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0295s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0098s ]
+SQL: SELECT `cId` FROM `cate` WHERE ( pid=1 )  [ RunTime:0.0013s ]
+SQL: SELECT `proId`,`pimg`,`pName`,`price` FROM `pro` WHERE `cId` IN (2,11,12,13,14) LIMIT 6,5   [ RunTime:0.0019s ]
+
+[ 2016-08-01T09:50:49+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getFirstCate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001707s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003991s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004201s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0033s ]
+
+[ 2016-08-01T09:50:49+08:00 ] ::1 /mmgyl/index.php/Home/proshow/makeChoiceForYou
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.018127s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.018467s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0025s ]
+SQL: SELECT `pImg`,`proId` FROM `pro` LIMIT 0,5   [ RunTime:0.0010s ]
+
+[ 2016-08-01T09:50:53+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getCateList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002571s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002234s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002429s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0020s ]
+SQL: SELECT `cId` FROM `cate` WHERE ( pid=1 )  [ RunTime:0.0013s ]
+SQL: SELECT `proId`,`pimg`,`pName`,`price` FROM `pro` WHERE `cId` IN (2,11,12,13,14) LIMIT 6,5   [ RunTime:0.0289s ]
+
+[ 2016-08-01T09:50:53+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getFirstCate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002374s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002215s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002407s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0027s ]
+
+[ 2016-08-01T09:50:54+08:00 ] ::1 /mmgyl/index.php/Home/proshow/makeChoiceForYou
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000084s ]
+INFO: [ app_init ] --END-- [ RunTime:0.025512s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.044958s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.045216s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0023s ]
+SQL: SELECT `pImg`,`proId` FROM `pro` LIMIT 0,5   [ RunTime:0.0010s ]
+
+[ 2016-08-01T09:50:55+08:00 ] ::1 /mmgyl/index.php/Home/proshow/secondCateProList?secondCateId=11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000668s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002194s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002459s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0204s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0007s ]
+SQL: SELECT `proId`,`pname`,`price`,`pimg` FROM `pro` WHERE ( cId=11 ) LIMIT 0,20   [ RunTime:0.0130s ]
+NOTIC: [8] Undefined variable: data D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 199 行.
+
+[ 2016-08-01T09:50:57+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getFirstCate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000643s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000763s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000847s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0012s ]
+
+[ 2016-08-01T09:50:58+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getCateList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000768s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001162s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0081s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0010s ]
+SQL: SELECT `cId` FROM `cate` WHERE ( pid=1 )  [ RunTime:0.0051s ]
+SQL: SELECT `proId`,`pimg`,`pName`,`price` FROM `pro` WHERE `cId` IN (2,11,12,13,14) LIMIT 6,5   [ RunTime:0.0006s ]
+
+[ 2016-08-01T09:50:58+08:00 ] ::1 /mmgyl/index.php/Home/proshow/makeChoiceForYou
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001086s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001159s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001260s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0014s ]
+SQL: SELECT `pImg`,`proId` FROM `pro` LIMIT 0,5   [ RunTime:0.0005s ]
+
+[ 2016-08-01T09:50:59+08:00 ] ::1 /mmgyl/index.php/Home/proshow/secondCateProList?secondCateId=11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001031s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001066s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001191s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0013s ]
+
+[ 2016-08-01T09:51:01+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getCateList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001726s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002248s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002473s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0169s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0010s ]
+SQL: SELECT `cId` FROM `cate` WHERE ( pid=1 )  [ RunTime:0.0008s ]
+SQL: SELECT `proId`,`pimg`,`pName`,`price` FROM `pro` WHERE `cId` IN (2,11,12,13,14) LIMIT 6,5   [ RunTime:0.0008s ]
+
+[ 2016-08-01T09:51:01+08:00 ] ::1 /mmgyl/index.php/Home/proshow/makeChoiceForYou
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001741s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002131s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002350s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0012s ]
+SQL: SELECT `pImg`,`proId` FROM `pro` LIMIT 0,5   [ RunTime:0.0006s ]
+
+[ 2016-08-01T09:51:01+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getFirstCate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.054857s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001459s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0086s ]
+
+[ 2016-08-01T09:51:02+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proShow?proId=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001888s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002518s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `pro_picture` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `pro` WHERE `proId` = 6  [ RunTime:0.0019s ]
+SQL: SELECT `picUrl` FROM `pro_picture` WHERE `proId` = 6  [ RunTime:0.0013s ]
+
+[ 2016-08-01T09:51:04+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getFirstCate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002094s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002187s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002380s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0026s ]
+
+[ 2016-08-01T09:51:04+08:00 ] ::1 /mmgyl/index.php/Home/proshow/makeChoiceForYou
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001804s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002214s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002432s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0229s ]
+SQL: SELECT `pImg`,`proId` FROM `pro` LIMIT 0,5   [ RunTime:0.0013s ]
+
+[ 2016-08-01T09:51:04+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getCateList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001941s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005262s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0022s ]
+SQL: SELECT `cId` FROM `cate` WHERE ( pid=1 )  [ RunTime:0.0011s ]
+SQL: SELECT `proId`,`pimg`,`pName`,`price` FROM `pro` WHERE `cId` IN (2,11,12,13,14) LIMIT 6,5   [ RunTime:0.0011s ]
+
+[ 2016-08-01T09:51:06+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proShow?proId=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002357s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002694s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0403s ]
+SQL: SHOW COLUMNS FROM `pro_picture` [ RunTime:0.0043s ]
+
+[ 2016-08-01T09:51:12+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proShow?proId=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001966s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002484s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002725s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0581s ]
+SQL: SHOW COLUMNS FROM `pro_picture` [ RunTime:0.0025s ]
+
+[ 2016-08-01T09:51:16+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proShow?proId=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001884s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002245s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002612s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `pro_picture` [ RunTime:0.0240s ]
+
+[ 2016-08-01T09:51:20+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proShow?proId=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000742s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000926s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001020s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `pro_picture` [ RunTime:0.0239s ]
+
+[ 2016-08-01T09:51:23+08:00 ] ::1 /mmgyl/index.php/Home/proshow/secondCateProList?secondCateId=11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000546s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000639s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000697s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0018s ]
+
+[ 2016-08-01T09:51:27+08:00 ] ::1 /mmgyl/index.php/Home/proshow/secondCateProList?secondCateId=11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002187s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002525s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0024s ]
+
+[ 2016-08-01T09:51:30+08:00 ] ::1 /mmgyl/index.php/Home/proshow/secondCateProList?secondCateId=11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002017s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002617s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002970s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0035s ]
+
+[ 2016-08-01T09:52:09+08:00 ] ::1 /mmgyl/index.php/Home/proshow/secondCateProList?secondCateId=11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000780s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000851s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000959s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0006s ]
+
+[ 2016-08-01T09:52:13+08:00 ] ::1 /mmgyl/index.php/Home/proshow/secondCateProList?secondCateId=11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000713s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000956s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001051s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0323s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0013s ]
+
+[ 2016-08-01T09:52:16+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proShow?proId=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002758s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002658s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `pro_picture` [ RunTime:0.0084s ]
+
+[ 2016-08-01T09:52:18+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proShow?proId=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004432s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004683s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `pro_picture` [ RunTime:0.1826s ]
+
+[ 2016-08-01T09:52:22+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proShow?proId=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001951s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004817s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005080s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `pro_picture` [ RunTime:0.1050s ]
+
+[ 2016-08-01T09:52:27+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proShow?proId=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001942s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002135s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002342s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `pro_picture` [ RunTime:0.0019s ]
+
+[ 2016-08-01T15:07:07+08:00 ] ::1 /mmgyl/index.php/Home/proshow/secondCateProList?secondCateId=11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.150618s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.011704s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011910s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0369s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0414s ]
+SQL: SELECT `proId`,`pname`,`price`,`pimg` FROM `pro` WHERE ( cId=11 ) LIMIT 0,20   [ RunTime:0.1497s ]
+NOTIC: [8] Undefined variable: data D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\ProshowController.class.php 第 199 行.
+
+[ 2016-08-01T15:07:37+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getCateList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001934s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003589s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003814s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0871s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0447s ]
+SQL: SELECT `cId` FROM `cate` WHERE ( pid=1 )  [ RunTime:0.0188s ]
+SQL: SELECT `proId`,`pimg`,`pName`,`price` FROM `pro` WHERE `cId` IN (2,11,12,13,14) LIMIT 6,5   [ RunTime:0.0013s ]
+
+[ 2016-08-01T15:07:37+08:00 ] ::1 /mmgyl/index.php/Home/proshow/makeChoiceForYou
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002820s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002584s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002769s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0038s ]
+SQL: SELECT `pImg`,`proId` FROM `pro` LIMIT 0,5   [ RunTime:0.0017s ]
+
+[ 2016-08-01T15:07:38+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getFirstCate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001476s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.029772s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.029991s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0100s ]
+SQL: SELECT `cateName`,`cId` FROM `cate` WHERE ( pid=0 )  [ RunTime:0.0016s ]
+
+[ 2016-08-01T15:07:42+08:00 ] ::1 /mmgyl/index.php/Home/proshow/secondCateProList?secondCateId=11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001869s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002122s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002322s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0247s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0241s ]
+
+[ 2016-08-01T15:08:06+08:00 ] ::1 /mmgyl/index.php/Home/proshow/proShow?proId=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004117s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002777s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `pro_picture` [ RunTime:0.0098s ]
+SQL: SELECT * FROM `pro` WHERE `proId` = 6  [ RunTime:0.0022s ]
+SQL: SELECT `picUrl` FROM `pro_picture` WHERE `proId` = 6  [ RunTime:0.0260s ]
+
+[ 2016-08-01T15:08:10+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getCateList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001961s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006876s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007115s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0132s ]
+SQL: SELECT `cId` FROM `cate` WHERE ( pid=1 )  [ RunTime:0.0230s ]
+SQL: SELECT `proId`,`pimg`,`pName`,`price` FROM `pro` WHERE `cId` IN (2,11,12,13,14) LIMIT 6,5   [ RunTime:0.0020s ]
+
+[ 2016-08-01T15:08:10+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getFirstCate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002082s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.016031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016270s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0252s ]
+
+[ 2016-08-01T15:08:10+08:00 ] ::1 /mmgyl/index.php/Home/proshow/makeChoiceForYou
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004048s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002106s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002307s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0032s ]
+SQL: SELECT `pImg`,`proId` FROM `pro` LIMIT 0,5   [ RunTime:0.0304s ]
+

@@ -2628,3 +2628,471 @@ NOTIC: [8] Undefined index: email D:\myenvironment\AppServ\www\mmgyl\APP\Home\Co
 NOTIC: [8] Undefined index: face D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\UserController.class.php 第 15 行.
 NOTIC: [8] Undefined index: address D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\UserController.class.php 第 16 行.
 
+[ 2016-07-31T22:21:52+08:00 ] ::1 /mmgyl/index.php/Home/User/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001574s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002513s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002686s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.3391s ]
+NOTIC: [8] Undefined index: userName D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\UserController.class.php 第 10 行.
+NOTIC: [8] Undefined index: password D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\UserController.class.php 第 11 行.
+NOTIC: [8] Undefined index: sex D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\UserController.class.php 第 12 行.
+NOTIC: [8] Undefined index: phone D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\UserController.class.php 第 13 行.
+NOTIC: [8] Undefined index: email D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\UserController.class.php 第 14 行.
+NOTIC: [8] Undefined index: face D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\UserController.class.php 第 15 行.
+NOTIC: [8] Undefined index: address D:\myenvironment\AppServ\www\mmgyl\APP\Home\Controller\UserController.class.php 第 16 行.
+
+[ 2016-07-31T22:23:47+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getCateList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001486s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003583s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003759s ]
+
+[ 2016-07-31T22:23:47+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getFirstCate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002422s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004485s ]
+
+[ 2016-07-31T22:24:01+08:00 ] ::1 /mmgyl/index.php/Home/proshow/makeChoiceForYou
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001890s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003200s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003393s ]
+
+[ 2016-07-31T22:42:46+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getCateList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008921s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.033054s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.033259s ]
+
+[ 2016-07-31T22:42:46+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getFirstCate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009022s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.033163s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.033366s ]
+
+[ 2016-07-31T22:42:46+08:00 ] ::1 /mmgyl/index.php/Home/proshow/makeChoiceForYou
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008795s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.033067s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.033240s ]
+
+[ 2016-07-31T22:42:59+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getFirstCate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002238s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003650s ]
+
+[ 2016-07-31T22:42:59+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getCateList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003784s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+
+[ 2016-07-31T22:42:59+08:00 ] ::1 /mmgyl/index.php/Home/proshow/makeChoiceForYou
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004994s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004886s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005148s ]
+
+[ 2016-07-31T22:44:17+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getCateList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006453s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003806s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004037s ]
+
+[ 2016-07-31T22:44:17+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getFirstCate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002146s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004533s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004778s ]
+
+[ 2016-07-31T22:44:17+08:00 ] ::1 /mmgyl/index.php/Home/proshow/makeChoiceForYou
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002904s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003492s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003802s ]
+
+[ 2016-07-31T22:44:42+08:00 ] ::1 /mmgyl/index.php/Home/proshow/makeChoiceForYou
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000131s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002030s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002988s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003184s ]
+
+[ 2016-07-31T22:44:42+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getFirstCate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002455s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003068s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003289s ]
+
+[ 2016-07-31T22:44:42+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getCateList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000175s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002983s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003680s ]
+
+[ 2016-07-31T22:46:33+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getCateList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002959s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006933s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007162s ]
+
+[ 2016-07-31T22:46:33+08:00 ] ::1 /mmgyl/index.php/Home/proshow/makeChoiceForYou
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003406s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003637s ]
+
+[ 2016-07-31T22:46:33+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getFirstCate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003455s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003683s ]
+
+[ 2016-07-31T22:46:40+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getCateList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002928s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003565s ]
+
+[ 2016-07-31T22:46:40+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getFirstCate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002442s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003668s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003904s ]
+
+[ 2016-07-31T22:46:40+08:00 ] ::1 /mmgyl/index.php/Home/proshow/makeChoiceForYou
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002582s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003870s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004086s ]
+
+[ 2016-07-31T22:47:58+08:00 ] ::1 /mmgyl/index.php/Home/proshow/makeChoiceForYou
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.035658s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.014521s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014675s ]
+
+[ 2016-07-31T22:47:58+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getCateList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.041750s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015224s ]
+
+[ 2016-07-31T22:47:58+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getFirstCate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.037700s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.014972s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015190s ]
+
+[ 2016-07-31T22:48:14+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getCateList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002197s ]
+
+[ 2016-07-31T22:48:14+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getFirstCate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002158s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002891s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003083s ]
+
+[ 2016-07-31T22:48:15+08:00 ] ::1 /mmgyl/index.php/Home/proshow/makeChoiceForYou
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000127s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003758s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004228s ]
+
+[ 2016-07-31T22:48:19+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getCateList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002480s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002698s ]
+
+[ 2016-07-31T22:48:19+08:00 ] ::1 /mmgyl/index.php/Home/proshow/makeChoiceForYou
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000147s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005257s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005161s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005379s ]
+
+[ 2016-07-31T22:48:19+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getFirstCate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005425s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005749s ]
+
+[ 2016-07-31T22:48:46+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getCateList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001876s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002485s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002703s ]
+
+[ 2016-07-31T22:48:46+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getFirstCate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.017907s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.013820s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014039s ]
+
+[ 2016-07-31T22:48:46+08:00 ] ::1 /mmgyl/index.php/Home/proshow/makeChoiceForYou
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.031304s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003498s ]
+
+[ 2016-07-31T22:49:07+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getCateList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000783s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000886s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000952s ]
+
+[ 2016-07-31T22:49:19+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getCateList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001513s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003516s ]
+
+[ 2016-07-31T22:50:31+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getCateList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002040s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003668s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003948s ]
+
+[ 2016-07-31T22:50:34+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getCateList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001730s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002085s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002265s ]
+
+[ 2016-07-31T22:50:34+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getCateList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003874s ]
+
+[ 2016-07-31T22:50:35+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getCateList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002311s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002854s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003080s ]
+
+[ 2016-07-31T22:55:26+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getCateList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.018832s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.035827s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.036264s ]
+
+[ 2016-07-31T22:55:50+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getCateList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002657s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002568s ]
+
+[ 2016-07-31T22:56:07+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getCateList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002878s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005134s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005441s ]
+
+[ 2016-07-31T22:56:26+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getCateList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002405s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006696s ]
+
+[ 2016-07-31T22:56:27+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getCateList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001960s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002627s ]
+
+[ 2016-07-31T22:56:28+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getCateList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002211s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002666s ]
+
+[ 2016-07-31T22:56:28+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getCateList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003860s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004113s ]
+
+[ 2016-07-31T22:56:57+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getCateList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001751s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003003s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003175s ]
+
+[ 2016-07-31T22:56:59+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getCateList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001514s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002368s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002545s ]
+
+[ 2016-07-31T22:59:12+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getCateList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008597s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015316s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.3811s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0938s ]
+SQL: SELECT `cId` FROM `cate` WHERE ( pid=1 )  [ RunTime:0.0526s ]
+SQL: SELECT `proId`,`pimg`,`pName`,`price` FROM `pro` WHERE `cId` IN (2,11,12,13,14) LIMIT 6,5   [ RunTime:0.0635s ]
+
+[ 2016-07-31T22:59:13+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getCateList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001494s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003520s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0821s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0335s ]
+SQL: SELECT `cId` FROM `cate` WHERE ( pid=1 )  [ RunTime:0.0014s ]
+SQL: SELECT `proId`,`pimg`,`pName`,`price` FROM `pro` WHERE `cId` IN (2,11,12,13,14) LIMIT 6,5   [ RunTime:0.0021s ]
+
+[ 2016-07-31T22:59:13+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getCateList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002910s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003134s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0756s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0635s ]
+SQL: SELECT `cId` FROM `cate` WHERE ( pid=1 )  [ RunTime:0.0686s ]
+SQL: SELECT `proId`,`pimg`,`pName`,`price` FROM `pro` WHERE `cId` IN (2,11,12,13,14) LIMIT 6,5   [ RunTime:0.0114s ]
+
+[ 2016-07-31T23:00:07+08:00 ] ::1 /mmgyl/index.php/Home/proshow/makeChoiceForYou
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002029s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003142s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003338s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.1689s ]
+SQL: SELECT `pImg`,`proId` FROM `pro` LIMIT 0,5   [ RunTime:0.0606s ]
+
+[ 2016-07-31T23:00:08+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getFirstCate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001735s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003234s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003383s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0333s ]
+SQL: SELECT `cateName`,`cId` FROM `cate` WHERE ( pid=0 )  [ RunTime:0.0446s ]
+
+[ 2016-07-31T23:00:08+08:00 ] ::1 /mmgyl/index.php/Home/proshow/getCateList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005708s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003785s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004088s ]
+SQL: SHOW COLUMNS FROM `pro` [ RunTime:0.0757s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0658s ]
+SQL: SELECT `cId` FROM `cate` WHERE ( pid=1 )  [ RunTime:0.1227s ]
+SQL: SELECT `proId`,`pimg`,`pName`,`price` FROM `pro` WHERE `cId` IN (2,11,12,13,14) LIMIT 6,5   [ RunTime:0.1444s ]
+
